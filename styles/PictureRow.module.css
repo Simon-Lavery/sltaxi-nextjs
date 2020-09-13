@@ -17,7 +17,7 @@
   .pictureRow {
     display: flex;
     justify-content: space-between;
-    width: 1024px;
+    width: 90%;
     margin: auto;
     padding: 0;
   }

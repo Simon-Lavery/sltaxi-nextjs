@@ -11,3 +11,12 @@
   display: block;
   font-size: 0.8rem;
 }
+
+@media (min-width: 768px) {
+  .logo a {
+    width: 8rem;
+  }
+  .tagline {
+    font-size: 1rem;
+  }
+}

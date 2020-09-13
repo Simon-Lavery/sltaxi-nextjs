@@ -3,6 +3,9 @@
   width: 100%;
   margin: 40px auto;
   background-color: white;
+  color: var(--grey);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .details {
@@ -24,10 +27,10 @@
   }
 
   .details {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .conditions {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }

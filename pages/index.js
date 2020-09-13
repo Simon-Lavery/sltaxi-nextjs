@@ -84,7 +84,7 @@ export default function Home() {
                   feel free to leave us an{" "}
                   <a
                     href="mailto:sltaxicatterick@gmail.com"
-                    className="inline-link"
+                    className={styles.inlineLink}
                   >
                     email
                   </a>{" "}
@@ -92,7 +92,7 @@ export default function Home() {
                 </p>
                 <p>
                   To book a taxi using any of our offers just call us on{" "}
-                  <a href="tel:01748 883370" className="inline-link">
+                  <a href="tel:01748 883370" className={styles.inlineLink}>
                     01748 883370
                   </a>
                   , the price is applied automatically on all phone bookings.
@@ -180,7 +180,7 @@ export default function Home() {
                   travelling so if you have any other concerns{" "}
                   <a
                     href="mailto:sltaxicatterick@gmail.com"
-                    className="inline-link"
+                    className={styles.inlineLink}
                   >
                     drop us an email
                   </a>

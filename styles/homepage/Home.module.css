@@ -3,6 +3,21 @@
   background-color: #dfdfdf;
 }
 
+.currentOffers,
+.safeTaxi {
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
+}
+.currentOffers h2,
+.safeTaxi h2,
+.safeTaxi h3 {
+  color: var(--primary-light);
+}
+
+.inlineLink {
+  color: var(--taxi-yellow);
+}
+
 @media (min-width: 768px) {
   .about,
   .currentOffers,

@@ -1,0 +1,13 @@
+.logo a {
+  display: inline-block;
+  width: 7rem;
+}
+
+.logo a img {
+  width: 100%;
+}
+
+.tagline {
+  display: block;
+  font-size: 0.8rem;
+}

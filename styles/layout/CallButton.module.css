@@ -1,0 +1,19 @@
+.callbutton {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+}
+
+.button {
+  background-color: var(--taxi-yellow);
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.icon {
+  font-size: 1.5rem;
+}

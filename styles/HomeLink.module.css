@@ -1,0 +1,11 @@
+.homelink {
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.homelink span {
+  margin: 0 10px;
+  color: gray;
+  border-bottom: 2px solid var(--taxi-yellow);
+}

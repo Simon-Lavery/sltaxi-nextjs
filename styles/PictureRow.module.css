@@ -1,0 +1,36 @@
+.pictureRow {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.textBlock {
+  width: 100%;
+  margin: auto;
+}
+
+.pictureRow ul {
+  padding-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .pictureRow {
+    display: flex;
+    justify-content: space-between;
+    width: 1024px;
+    margin: auto;
+    padding: 0;
+  }
+
+  .picture {
+    width: 45%;
+    margin-top: 40px;
+  }
+  .textBlock {
+    width: 45%;
+    margin: 0;
+  }
+  .swap {
+    order: -1;
+  }
+}

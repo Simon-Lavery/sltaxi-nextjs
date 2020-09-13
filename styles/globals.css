@@ -1,9 +1,54 @@
+:root {
+  --grey: #444;
+  --taxi-yellow: #f7b731;
+  --primary-light: #eceff1;
+  --primary: #819ca9;
+  --primary-dark: #546e7a;
+}
+
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--primary-light);
+  font-size: 1rem;
+  color: var(--grey);
+  line-height: 1.3;
+}
+
+h1,
+h2 {
+  font-family: "Titillium Web", sans-serif;
+  margin: 0;
+  padding: 50px 0 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-dark);
+  margin: 0;
+}
+h1,
+h2 {
+  padding: 40px 0 10px;
+}
+
+h3 {
+  padding: 20px 0 0;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 1.8rem;
 }
 
 a {
@@ -11,6 +56,48 @@ a {
   text-decoration: none;
 }
 
+.inline-link {
+  color: steelblue;
+  font-weight: bold;
+}
+p {
+  margin: 10px 0 20px;
+}
+
 * {
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.content {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.content-to-wide {
+  width: 95%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .content {
+    max-width: 1024px;
+  }
+
+  .content-to-wide {
+    margin: 0 0 0 5%;
+    max-width: 60%;
+  }
+
+  .mobile-line-break {
+    display: none;
+  }
+
+  .desktop-row {
+    display: flex;
+    justify-content: space-between;
+  }
 }

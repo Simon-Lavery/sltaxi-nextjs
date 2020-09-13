@@ -1,0 +1,18 @@
+.perk {
+  margin: 0 auto 40px;
+  width: 80%;
+}
+
+.icon {
+  font-size: 2rem;
+  color: slategrey;
+}
+
+@media (min-width: 768px) {
+  .perk {
+    margin: 0 auto 40px;
+    text-align: center;
+    width: 50%;
+    font-size: 0.9rem;
+  }
+}

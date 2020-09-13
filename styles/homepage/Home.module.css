@@ -1,0 +1,32 @@
+.currentOffers,
+.safeTaxi {
+  background-color: #dfdfdf;
+}
+
+@media (min-width: 768px) {
+  .about,
+  .currentOffers,
+  .airportTransfers,
+  .safeTaxi,
+  .greatService,
+  .stationTransfers {
+    padding: 50px 0;
+  }
+
+  .about .textBlock {
+    width: 50%;
+  }
+
+  .currentOffers .textBlock {
+    width: 35%;
+  }
+
+  .extras {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  .extras .textBlock {
+    width: 45%;
+  }
+}

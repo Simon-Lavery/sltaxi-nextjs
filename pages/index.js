@@ -225,8 +225,10 @@ export default function Home() {
                 Northallerton to Catterick.
               </p>
               <p>
-                We would advise booking in advance to guarantee availablity. To
-                book call{" "}
+                We would advise booking in advance to guarantee availablity.{" "}
+              </p>
+              <p>
+                To book call{" "}
                 <a href="tel:01748 883370" className="inline-link">
                   01748 883370
                 </a>

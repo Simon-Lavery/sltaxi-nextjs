@@ -5,7 +5,7 @@
 }
 
 .contact {
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 .tel,
@@ -17,4 +17,13 @@
   font-size: 0.9rem;
   margin-top: 5px;
   display: block;
+}
+
+.privacy {
+  display: inline-block;
+  border-radius: 5px;
+  color: var(--primary-dark);
+  margin: 20px 0;
+  padding: 3px 5px;
+  background-color: var(--primary-light);
 }

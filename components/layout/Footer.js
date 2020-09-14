@@ -1,4 +1,5 @@
 import styles from "../../styles/layout/Footer.module.css";
+import Link from "next/link";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -12,6 +13,11 @@ const Footer = () => {
               Email: sltaxicatterick@gmail.com
             </a>
           </div>
+        </div>
+        <div className={styles.privacy}>
+          <Link href="/privacy-policy">
+            <a>Privacy policy</a>
+          </Link>
         </div>
         <span className={styles.copy}>
           SLTaxi is a trading name of Simon Lavery

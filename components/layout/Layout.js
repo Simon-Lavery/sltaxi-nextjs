@@ -3,6 +3,7 @@ import Navbar from "./navbar/Navbar";
 import CallButton from "./CallButton";
 import Footer from "./Footer";
 import Head from "next/head";
+import SocialMediaLinks from "../../components/SocialMediaLinks";
 
 const Layout = ({
   children,

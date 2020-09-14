@@ -1,5 +1,6 @@
 import styles from "../../styles/layout/Footer.module.css";
 import Link from "next/link";
+import SocialMediaLinks from "../SocialMediaLinks";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -24,6 +25,7 @@ const Footer = () => {
         </span>
         <span className={styles.copy}>&copy; 2020 All rights reserved.</span>
       </div>
+      <SocialMediaLinks />
     </footer>
   );
 };

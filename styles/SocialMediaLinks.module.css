@@ -1,0 +1,20 @@
+.socialMediaLinks {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--primary);
+  margin-top: 10px;
+  padding: 10px 0;
+  height: auto;
+}
+
+.socialMediaLinks a {
+  color: white;
+  margin-right: 3rem;
+}
+
+.icon {
+  font-size: 2rem;
+}

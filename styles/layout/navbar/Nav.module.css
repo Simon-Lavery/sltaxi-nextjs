@@ -35,6 +35,7 @@
 .show {
   width: 100vw;
   opacity: 0.9;
+  z-index: 1;
 }
 
 .active {

@@ -61,7 +61,7 @@ export default function Airport() {
               <Link href="/station">
                 <a className="inline-link">station transfers</a>
               </Link>{" "}
-              in the Catterick garrison area. Get a taxi to the Darlington or
+              in the Catterick garrison area. Get a taxi to Darlington or
               Northallerton station for just £25, or if you need a taxi to any
               other station, call us for a quote.
             </p>

@@ -3,6 +3,26 @@ import Hero from "../components/layout/Hero";
 import HomeLink from "../components/HomeLink";
 import styles from "../styles/Station.module.css";
 import Link from "next/link";
+import Head from "next/head";
+
+const schema = {
+  "@context": "http://schema.org",
+  "@type": "Product",
+  name: "Station transfers",
+  image: "https://sltaxicatterick.co.uk/imgs/stationhero.jpg",
+  description: "Catterick garrison to Darlington or Northallerton station",
+  url: "https://sltaxicatterick.co.uk/station",
+  brand: {
+    "@type": "Brand",
+    name: "SLTaxi",
+    logo: "/imgs/logo3.png",
+  },
+  offers: {
+    "@type": "Offer",
+    price: "£25",
+  },
+};
+
 export default function Station() {
   return (
     <div>
@@ -11,6 +31,7 @@ export default function Station() {
         description="Best taxi price from Catterick Garrison to Darlington or Northallerton train station."
         keywords="catterick to darlington, taxi to darlington, taxi to northallerton"
         canonical="https://sltaxicatterick.co.uk/station"
+        schema={schema}
       >
         <Hero
           imgURL="stationhero"

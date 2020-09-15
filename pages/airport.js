@@ -2,6 +2,7 @@ import Layout from "../components/layout/Layout";
 import Hero from "../components/layout/Hero";
 import HomeLink from "../components/HomeLink";
 import styles from "../styles/Airport.module.css";
+import Link from "next/link";
 export default function Airport() {
   return (
     <div>
@@ -53,6 +54,16 @@ export default function Airport() {
                 sltaxicatterick@gmail.com
               </a>
               .
+            </p>
+            <h2>Taxi to the station</h2>
+            <p>
+              If you need to catch a train to the Airport we have the best price{" "}
+              <Link href="/station">
+                <a className="inline-link">station transfers</a>
+              </Link>{" "}
+              in the Catterick garrison area. Get a taxi to the Darlington or
+              Northallerton station for just £25, or if you need a taxi to any
+              other station, call us for a quote.
             </p>
 
             <HomeLink />

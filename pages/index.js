@@ -20,7 +20,7 @@ const schema = {
       areaServed: "Catterick garrison",
     },
     telephone: "01748 883370",
-    image: "https://sltaxicatterick.co.uk/imgs/logo3.png",
+    image: "https://sltaxicatterick.co.uk/imgs/googlecover.jpg",
     logo: "https://sltaxicatterick.co.uk/imgs/logo3.png",
     slogan: "Unbeatable prices, Unrivalled service",
   },
@@ -146,7 +146,7 @@ export default function Home() {
               imgURL="screen"
               altText="Picture of our passenger safety screen"
             />
-            <div className="content">
+            <div>
               <h2>Travel safe</h2>
               <p>
                 As we have a screen fitted to allow for social distancing we are
@@ -193,7 +193,7 @@ export default function Home() {
         <section className={styles.greatService}>
           <PictureRow>
             <Picture imgURL="carinterior" altText="Picture of our taxi" />
-            <div className="content">
+            <div>
               <h2>Great service</h2>
               <p>
                 Looking for the premier taxi service in Catterick garrison, Our
@@ -211,7 +211,7 @@ export default function Home() {
               imgURL="stationhero"
               altText="Picture of a train at the platform in Darlington station"
             />
-            <div className="content">
+            <div>
               <h2>Station transfers</h2>
               <p>
                 Looking for unbeatable taxi prices on

@@ -4,11 +4,10 @@
 .safeTaxi,
 .greatService,
 .stationTransfers {
-  padding: 0 0 1px;
+  padding: 0 0 40px;
 }
 
-.currentOffers,
-.safeTaxi {
+.stationTransfers {
   background-color: #dfdfdf;
 }
 

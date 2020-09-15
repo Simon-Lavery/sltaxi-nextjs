@@ -24,7 +24,7 @@ const Layout = ({
         <meta name="theme-color" content="#eceff1" />
         {schema && (
           <script
-            key={schema.provider.name}
+            key={schema.name}
             type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({ schema }),

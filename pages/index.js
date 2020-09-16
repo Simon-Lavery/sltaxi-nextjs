@@ -54,19 +54,15 @@ export default function Home() {
                 </h1>
                 <p>
                   We are a Professional, Independent taxi service in Catterick
-                  garrison, providing taxis for airport transfers, station
-                  transfers, business travel, nights out, shopping trips, long
-                  and short distance fares. If you're looking for a consistently
-                  reliable service, clean car and unbeatable prices you have
-                  come to the right place.
-                </p>
-                <p>
-                  We serve the Catterick garrison, Scotton, Colburn area and
+                  garrison, serving the Catterick, Scotton, Colburn area. We
                   pride ourselves on exceptional service and going the extra
                   mile for our customers. Our taxis are maintained to the
                   highest standards and we are fully licensed and DBS checked.
-                  So why not book with us today and see for yourself how a taxi
-                  service should be.
+                </p>
+                <p>
+                  If you need a taxi for a night out, business trip, airport
+                  transfer or shopping trip we won't be beaten on price or
+                  service so give us a call and see for yourself.
                 </p>
               </div>
 
@@ -88,7 +84,10 @@ export default function Home() {
                   >
                     email
                   </a>{" "}
-                  for the kind of offers you would like to see in the future.
+                  for the kind of offers you would like to see in the future. We
+                  are confident we have the best taxi prices in the Catterick
+                  area so why on give us a call and see if we can beat you
+                  current quote.
                 </p>
                 <p>
                   To book a taxi using any of our offers just call us on{" "}
@@ -176,13 +175,13 @@ export default function Home() {
               <div className={styles.textBlock}>
                 <h3>Any other concerns</h3>
                 <p>
-                  We understand that some customers are still worried about
-                  travelling so if you have any other concerns{" "}
+                  We are doing everything possible to make your taxi journey
+                  safe, if you need any more information feel free to send us an{" "}
                   <a
                     href="mailto:sltaxicatterick@gmail.com"
                     className={styles.inlineLink}
                   >
-                    drop us an email
+                    email
                   </a>
                   .
                 </p>
@@ -196,11 +195,17 @@ export default function Home() {
             <div>
               <h2>Great service</h2>
               <p>
-                Looking for the premier taxi service in Catterick garrison, Our
-                taxi is cleaned and maintained to the highest standards and is
-                strictly smoke free so you can be sure to have a relaxing, safe
-                and comfortable journey. We also have superfast 4G wifi and
-                phone charging facilities for your convenience.
+                Looking for the premier taxi service in Catterick garrison, our
+                taxis are maintained to the highest possible standards, so where
+                ever need to go you can be sure to have a relaxing, safe and
+                comfortable journey.
+              </p>
+              <p>
+                We accept Card or Contactless payments in every taxi so no need
+                to worry about carrying cash. We also superfast customer wifi
+                and charging facilities to keep you entertained on your journey.
+                Check out some of our five star reviews and see what our
+                customers think.
               </p>
             </div>
           </PictureRow>
@@ -214,7 +219,7 @@ export default function Home() {
             <div>
               <h2>Station transfers</h2>
               <p>
-                Looking for unbeatable taxi prices on
+                Get Unbeatable taxi prices on
                 <Link href="station">
                   <a className="inline-link"> station transfers </a>
                 </Link>

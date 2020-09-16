@@ -18,7 +18,6 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    console.log("use effect ran", menuToggleStatus);
     window.addEventListener("scroll", closeMenu);
     return () => window.removeEventListener("scroll", closeMenu);
   });

@@ -3,7 +3,6 @@ import Hero from "../components/layout/Hero";
 import HomeLink from "../components/HomeLink";
 import styles from "../styles/Station.module.css";
 import Link from "next/link";
-import Head from "next/head";
 
 const schema = {
   "@context": "http://schema.org",
@@ -45,7 +44,12 @@ export default function Station() {
               <p>
                 Are you looking for a reliable taxi service to get you to the
                 station?, you can count on us to get you there safely and on
-                time.
+                time, everytime. We have the best taxi deals in the local area,
+                we won't be beaten on price or service. If you would like to
+                book call{" "}
+                <a className="inline-link" href="tel:01748883370">
+                  01748 883370.
+                </a>
               </p>
               <p>
                 The closest train stations to Catterick garrison are

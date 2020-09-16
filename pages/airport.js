@@ -3,6 +3,25 @@ import Hero from "../components/layout/Hero";
 import HomeLink from "../components/HomeLink";
 import styles from "../styles/Airport.module.css";
 import Link from "next/link";
+
+const schema = {
+  "@context": "https://schema.org/",
+  "@type": "TaxiService",
+  provider: {
+    "@type": "LocalBusiness",
+    name: "SLTaxi Catterick garrison",
+    location: {
+      "@type": "place",
+      areaServed: "Catterick garrison",
+    },
+    telephone: "01748 883370",
+    image: "https://sltaxicatterick.co.uk/imgs/googlecover.jpg",
+    logo: "https://sltaxicatterick.co.uk/imgs/logo3.png",
+    slogan: "Unbeatable prices, Unrivalled service",
+  },
+  providerMobility: "dynamic",
+};
+
 export default function Airport() {
   return (
     <div>
@@ -11,6 +30,7 @@ export default function Airport() {
         description="Best price airport transfers from Catterick Garrison to Newcastle, leeds or any UK airport. Get the best price and service from us."
         keywords="taxi catterick, airport transfers, catterick to newcastle, catterick to leeds"
         canonical="https://sltaxicatterick.co.uk/airport"
+        schema={schema}
       >
         <Hero
           imgURL="airporthero"
@@ -27,7 +47,13 @@ export default function Airport() {
               a taxi for cheaper than you might think.
             </p>
             <p>
-              We have unbeatable set price fares from Catterick to Newcastle
+              Our taxis are maintained to the highest standards and we also
+              provide customer wifi and phone charging facilities in every taxi.
+              So where ever you need to go, you can trust to get you there
+              safely, in comfort and on time.
+            </p>
+            <p>
+              We have unbeatable fixed price fares from Catterick to Newcastle
               Airport (NCL), Leeds Bradford Airport (LBA) or Manchester Airport
               (MCN) and we are confident that our airport taxi prices are the
               best in the Catterick area so if you have a quote already, lets

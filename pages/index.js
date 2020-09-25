@@ -114,7 +114,7 @@ export default function Home() {
         <section className={styles.airportTransfers}>
           <PictureRow>
             <Picture
-              imgURL="airporthero"
+              imgURL="airport"
               altText="Picture of an aeroplane landing at an airport"
             />
             <div className="content">
@@ -148,9 +148,10 @@ export default function Home() {
             <div>
               <h2>Travel safe</h2>
               <p>
-                As we have a screen fitted to allow for social distancing we are
-                currently limited to a maximum of 3 passengers per journey.
-                Extra measures we have in place to keep customers safe include:
+                As we have a safety screen fitted to allow for social distancing
+                we are currently limited to a maximum of 3 passengers per
+                journey. Extra measures we have in place to keep customers safe
+                include:
               </p>
               <ul>
                 <li>Screen fitted between driver and passengers</li>
@@ -212,7 +213,7 @@ export default function Home() {
         <section className={styles.stationTransfers}>
           <PictureRow reverse={true}>
             <Picture
-              imgURL="stationhero"
+              imgURL="station"
               altText="Picture of a train at the platform in Darlington station"
             />
             <div>

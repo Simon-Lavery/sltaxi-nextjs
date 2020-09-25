@@ -166,10 +166,9 @@ export default function Home() {
               <div className={styles.textBlock}>
                 <h3>Face masks</h3>
                 <p>
-                  As from July 24th, face masks are required to be worn on every
-                  journey unless you are exempt. If you require a face mask we
-                  can provide you with a brand new disposable mask, just ask the
-                  driver.
+                  Face masks are required to be worn on every journey unless you
+                  are exempt. If you require a face mask we can provide you with
+                  a brand new disposable mask, just ask the driver.
                 </p>
               </div>
               <div className={styles.textBlock}>

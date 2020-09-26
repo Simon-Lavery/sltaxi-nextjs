@@ -27,7 +27,7 @@ export default function Station() {
     <div>
       <Layout
         title="Best price taxi from Catterick to Darlington station"
-        description="Best taxi price from Catterick Garrison to Darlington or Northallerton train station."
+        description="Best taxi prices from Catterick Garrison to Darlington or Northallerton train station."
         keywords="catterick to darlington, taxi to darlington, taxi to northallerton"
         canonical="https://sltaxicatterick.co.uk/station"
         schema={schema}
@@ -42,11 +42,15 @@ export default function Station() {
             <div className={styles.content}>
               <h1>Station transfers</h1>
               <p>
-                Are you looking for a reliable taxi service to get you to the
-                station?, you can count on us to get you there safely and on
-                time, everytime. We have the best taxi deals in the local area,
-                we won't be beaten on price or service. If you would like to
-                book call{" "}
+                Need a taxi to the station ?, we have the best taxi prices in
+                Catterick garrison. Our taxis are maintained to the highest
+                standards, we are confident you won't find the same level of
+                service anywhere else.
+              </p>
+              <p>
+                We have superfast wifi and charging facilites in every taxi so
+                wherever you need to go you can rely on us to get you there
+                safely, in comfort and on time. If you would like to book call{" "}
                 <a className="inline-link" href="tel:01748883370">
                   01748 883370.
                 </a>
@@ -100,6 +104,16 @@ export default function Station() {
                 We accept all major credit cards and Contactless payments in
                 every taxi so no need to worry about looking for the nearest
                 cash point.
+              </p>
+              <h2>Airport transfer</h2>
+              <p>
+                We also have unbeatable{" "}
+                <Link href="/airport">
+                  <a className="inline-link">Airport tranfer</a>
+                </Link>{" "}
+                prices, if you are travelling from Catterick to Newcastle (NCL),
+                Leeds Bradford (LBA) or Manchester (MCN) Airport why not ask us
+                for a no obligation quote.
               </p>
               <h2>Is a taxi cheaper ?</h2>
               <p>

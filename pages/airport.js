@@ -42,7 +42,7 @@ export default function Airport() {
             <h1>Airport transfers</h1>
             <p>
               Are you going on holiday or travelling for business?, need a taxi
-              to the airport. We specialise in taxis to or from any UK airport
+              to the airport ?. We specialise in taxis to or from any UK airport
               so why worry about parking or leaving your car when you could get
               a taxi for cheaper than you might think.
             </p>
@@ -62,13 +62,10 @@ export default function Airport() {
             </p>
             <h2>Relax</h2>
             <p>
-              When you book an airport transfer with SLTaxi, we can monitor your
-              flight schedule and adjust your pick up time if we need to so you
-              can relax knowing your taxi will be waiting when you arrive. We
-              have lots of luggage space, enough for 3 - 4 large suitcases. We
-              also have free super fast wifi in our taxi to keep you entertained
-              on your way to the airport. For a no obligation quote just give us
-              a call on{" "}
+              We have lots of luggage space, enough for 3 - 4 large suitcases.
+              We also have free super fast wifi in our taxi to keep you
+              entertained on your way to the airport. For a no obligation quote
+              just give us a call on{" "}
               <a href="tel:01748 883370" className="inline-link">
                 01748 883370
               </a>{" "}
@@ -80,6 +77,25 @@ export default function Airport() {
                 sltaxicatterick@gmail.com
               </a>
               .
+            </p>
+            <p>
+              When you book an airport transfer with SLTaxi, we monitor your
+              flight schedule and adjust your pick up time if we need to so you
+              can relax knowing your taxi will be waiting when you arrive.
+              You'll get a text message when you land with the make, model and
+              registration number of the car.
+            </p>
+            <p>
+              We also offer a meet and greet service at no extra charge so if
+              you need some assistance when you get off the plane just let us
+              know when you book your taxi and we can meet you in the airport.
+            </p>
+            <h2>Card payments</h2>
+            <p>
+              We accept card and contactless payments, including Apple and
+              Android pay in every taxi so no need to worry about carrying cash.
+              If you prefer, you can even pay for your taxi in advance with our
+              payment link service.
             </p>
             <h2>Taxi to the station</h2>
             <p>

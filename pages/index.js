@@ -37,7 +37,11 @@ export default function Home() {
         canonical="https://sltaxicatterick.co.uk"
         schema={schema}
       >
-        <Hero imgURL="googlecover" altText="picture of out taxi" ext=".jpg" />
+        <Hero
+          imgURL="googlecover"
+          altText="picture of SLTaxi Catterick taxi"
+          ext=".jpg"
+        />
         <Banner info="Please note: We have some extra measures to keep passengers safe">
           <Link href="/#safeTaxi">
             <a>find out more</a>
@@ -86,7 +90,7 @@ export default function Home() {
                   </a>{" "}
                   for the kind of offers you would like to see in the future. We
                   are confident we have the best taxi prices in the Catterick
-                  area so why on give us a call and see if we can beat you
+                  area so why on give us a call and see if we can beat your
                   current quote.
                 </p>
                 <p>
@@ -94,7 +98,7 @@ export default function Home() {
                   <a href="tel:01748 883370" className={styles.inlineLink}>
                     01748 883370
                   </a>
-                  , the price is applied automatically on all phone bookings.
+                  , the price is applied automatically to all phone bookings.
                   And for all other journeys, challenge us to beat your current
                   taxi quote, we are confident we can beat any local price.
                 </p>
@@ -143,15 +147,15 @@ export default function Home() {
           <PictureRow reverse={true}>
             <Picture
               imgURL="screen"
-              altText="Picture of our passenger safety screen"
+              altText="Picture of SLTaxi Catterick passenger safety screen"
             />
             <div>
-              <h2>Travel safe</h2>
+              <h2>Travel safe with us</h2>
               <p>
-                As we have a safety screen fitted to allow for social distancing
-                we are currently limited to a maximum of 3 passengers per
-                journey. Extra measures we have in place to keep customers safe
-                include:
+                The safety of passengers and driver are our number 1 priority
+                and we have taken extra measures to keep everyone safe. We are
+                currently only taking a maximum of 3 passengers per journey.
+                Other safety measures we have introduced include:
               </p>
               <ul>
                 <li>Screen fitted between driver and passengers</li>
@@ -167,9 +171,9 @@ export default function Home() {
               <div className={styles.textBlock}>
                 <h3>Face masks</h3>
                 <p>
-                  Face masks are required to be worn on every journey unless you
+                  Face masks are required to be worn in every taxi unless you
                   are exempt. If you require a face mask we can provide you with
-                  a brand new disposable mask, just ask the driver.
+                  a brand new disposable one, just ask your driver.
                 </p>
               </div>
               <div className={styles.textBlock}>

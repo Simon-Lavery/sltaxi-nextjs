@@ -2,7 +2,6 @@ import Layout from "../components/layout/Layout";
 import HomeLink from "../components/HomeLink";
 import Link from "next/link";
 import Header from '../components/header';
-import styles from '../styles/station.module.css';
 
 const schema = {
   "@context": "http://schema.org",
@@ -40,7 +39,7 @@ export default function Station() {
                 service anywhere else."
        />
         
-          <section className={styles.intro}>
+          <section>
             <div className='content'>
             <h2>Need a taxi to the Station?</h2>
             <p>
@@ -59,7 +58,7 @@ export default function Station() {
             </p>
             </div>
           </section>
-          <section className={styles.specialOffers}>
+          <section>
           <div className='content'>
               <h2>Special offers</h2>
               <p>

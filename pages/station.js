@@ -1,8 +1,8 @@
 import Layout from "../components/layout/Layout";
-import Hero from "../components/layout/Hero";
 import HomeLink from "../components/HomeLink";
-import styles from "../styles/Station.module.css";
 import Link from "next/link";
+import Header from '../components/header';
+import styles from '../styles/station.module.css';
 
 const schema = {
   "@context": "http://schema.org",
@@ -32,35 +32,35 @@ export default function Station() {
         canonical="https://sltaxicatterick.co.uk/station"
         schema={schema}
       >
-        <Hero
-          imgURL="stationhero"
-          altText="Picture of a train at Darlington station"
-          ext=".jpg"
-        />
-        <div className={styles.station}>
-          <div className="content content-to-wide">
-            <div className={styles.content}>
-              <h1>Station transfers</h1>
-              <p>
-                Need a taxi to the station ?, we have the best taxi prices in
-                Catterick garrison. Our taxis are maintained to the highest
+       <Header 
+         title1="Best Price"
+         title2="Station transfers"
+         intro="We have the best taxi prices in Catterick garrison. Our taxis are maintained to the highest
                 standards, we are confident you won't find the same level of
-                service anywhere else.
-              </p>
-              <p>
-                We have superfast wifi and charging facilites in every taxi so
-                wherever you need to go you can rely on us to get you there
-                safely, in comfort and on time. If you would like to book call{" "}
-                <a className="inline-link" href="tel:01748883370">
-                  01748 883370.
-                </a>
-              </p>
-              <p>
-                The closest train stations to Catterick garrison are
-                Northallerton and Darlington, 15 and 17 miles away respectively.
-                The journey time in a taxi to either is around 25 - 30 minutes
-                in normal traffic.
-              </p>
+                service anywhere else."
+       />
+        
+          <section className={styles.intro}>
+            <div className='content'>
+            <h2>Need a taxi to the Station?</h2>
+            <p>
+              We have superfast wifi and charging facilites in every taxi so
+              wherever you need to go you can rely on us to get you there
+              safely, in comfort and on time. If you would like to book call{" "}
+              <a className="inline-link" href="tel:01748883370">
+                01748 883370.
+              </a>
+            </p>
+            <p>
+              The closest train stations to Catterick garrison are
+              Northallerton and Darlington, 15 and 17 miles away respectively.
+              The journey time in a taxi to either is around 25 - 30 minutes
+              in normal traffic.
+            </p>
+            </div>
+          </section>
+          <section className={styles.specialOffers}>
+          <div className='content'>
               <h2>Special offers</h2>
               <p>
                 We can provide a taxi from Catterick garrison to Darlington or
@@ -79,6 +79,11 @@ export default function Station() {
                 </Link>
                 .
               </p>
+              </div>
+              </section>
+
+              <section>
+              <div className='content'>
               <h2>Station pickups</h2>
               <p>
                 If you are coming in to Darlington or Northallerton station and
@@ -105,6 +110,10 @@ export default function Station() {
                 every taxi so no need to worry about looking for the nearest
                 cash point.
               </p>
+              </div>
+              </section>
+              <section>
+              <div className='content'>
               <h2>Airport transfer</h2>
               <p>
                 We also have unbeatable{" "}
@@ -115,7 +124,7 @@ export default function Station() {
                 Leeds Bradford (LBA) or Manchester (MCN) Airport why not ask us
                 for a no obligation quote.
               </p>
-              <h2>Is a taxi cheaper ?</h2>
+              <h3>Is a taxi cheaper ?</h3>
               <p>
                 If you are travelling with a few people you should always check
                 the price of your train tickets combined with the price of your
@@ -134,9 +143,10 @@ export default function Station() {
                 </span>
               </p>
               <HomeLink />
-            </div>
-          </div>
-        </div>
+              </div>
+              </section>
+           
+      
       </Layout>
     </div>
   );

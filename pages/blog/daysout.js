@@ -1,6 +1,5 @@
 import Layout from "../../components/layout/Layout";
 import BlogPost from "../../components/BlogPost";
-import Hero from "../../components/layout/Hero";
 import HomeLink from "../../components/HomeLink";
 import daysoutList from "../api/daysout";
 import Dayout from "../../components/Dayout";
@@ -13,7 +12,7 @@ export default function DaysOut() {
         keywords="days out, taxi catterick, whats on, catterick taxi, taxi information"
         canonical="https://sltaxicatterick.co.uk/blog/daysout"
       >
-        <Hero imgURL="daysouthero" altText="picture of a day out" ext=".jpg" />
+       
         <div className="content">
           <BlogPost title="Days out near Catterick" date="20 July 2019">
             <p>

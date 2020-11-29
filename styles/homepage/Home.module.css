@@ -1,55 +1,164 @@
-.about,
-.currentOffers,
-.airportTransfers,
-.safeTaxi,
-.greatService,
-.stationTransfers {
-  padding: 0 0 40px;
-}
+/*--------------------
+SAFETAXI
+----------------------*/
 
-.stationTransfers {
-  background-color: #dfdfdf;
-}
-
-.currentOffers,
 .safeTaxi {
-  background-color: var(--primary-dark);
-  color: var(--primary-light);
+  background-color: var(--accent-dark);
+  color: white;
 }
-.currentOffers h2,
+
 .safeTaxi h2,
 .safeTaxi h3 {
-  color: var(--primary-light);
+  color: white;
 }
 
-.inlineLink {
-  color: var(--taxi-yellow);
+.safeTaxi a {
+  color: var(--accent-light);
+}
+/* -----------------------
+CURRENT OFFERS
+-------------------------*/
+
+.currentOffers {
+  background: var(--primary-light);
+  color: #444;
+}
+
+.currentOffers img {
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+.currentOffers h3 {
+  margin: 15px 0 0 0;
+}
+
+.currentOffers p {
+  margin: 5px 0 0 0;
+}
+
+.offer1,
+.offer2 {
+  background-color: #ddd;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.pictureRow .text {
+  width: 95%;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
 @media (min-width: 768px) {
-  .about,
-  .currentOffers,
-  .airportTransfers,
-  .safeTaxi,
-  .greatService,
-  .stationTransfers {
-    padding: 50px 0;
-  }
+  /*------------------------
+  CURRENT OFFERS
+  --------------------------*/
 
-  .about .textBlock {
+  /*--------------------------
+  AIRPORT TRANSFERS
+  ---------------------------*/
+
+  .pictureRow .text {
+    padding: 30px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* -------------------
+  ABOUT STYLES
+  ----------------------*/
+  .aboutText {
+    display: inline-block;
     width: 50%;
   }
 
-  .currentOffers .textBlock {
-    width: 35%;
+  /*------------------------
+  CURRENT OFFERS
+  --------------------------*/
+
+  .offer1,
+  .offer2 {
+    display: flex;
   }
 
-  .extras {
+  .offer1 img,
+  .offer2 img {
+    width: 50%;
+  }
+
+  .offer1 h3,
+  .offer2 h3 {
+    padding: 30px 0 0 30px;
+  }
+
+  .offer1 p,
+  .offer2 p {
+    padding: 0 0 0 30px;
+    font-size: 1rem;
+  }
+
+  .pictureRow {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    width: 90%;
+    margin: 50px auto;
   }
-  .extras .textBlock {
+
+  .pictureRow .picture {
+    width: 50%;
+    height: 400px;
+  }
+
+  .pictureRow .text {
+    padding: 40px 0 40px 40px;
+    width: 50%;
+  }
+
+  .pictureRow .reverse {
+    order: -1;
+    padding: 40px 40px 40px 0;
+  }
+}
+
+/*--------------------------
+  AIRPORT TRANSFERS
+  ---------------------------*/
+
+/*--------------------------
+  SAFETAXI TRANSFERS
+  ---------------------------*/
+
+@media (min-width: 1150px) {
+  /*------------------------
+  CURRENT OFFERS
+  --------------------------*/
+  .offer1,
+  .offer2 {
+    display: inline-block;
     width: 45%;
+    flex-direction: column;
+    background-color: #eee;
+  }
+
+  .offer1 {
+    margin: 0 10% 0 0;
+  }
+
+  .offer1 img,
+  .offer2 img {
+    width: 100%;
+  }
+
+  .offer1 h3,
+  .offer2 h3 {
+    padding: 0;
+  }
+
+  .offer1 p,
+  .offer2 p {
+    padding: 0;
   }
 }

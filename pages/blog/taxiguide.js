@@ -1,5 +1,4 @@
 import Layout from "../../components/layout/Layout";
-import Hero from "../../components/layout/Hero";
 import BlogPost from "../../components/BlogPost";
 import HomeLink from "../../components/HomeLink";
 
@@ -12,11 +11,7 @@ export default function Taxiguide() {
         keywords="taxi in catterick, save money, tips, guide"
         canonical="https://sltaxicatterick.co.uk/blog/taxiguide"
       >
-        <Hero
-          imgURL="taxiguidehero"
-          altText="picture of a taxi rank"
-          ext=".jpg"
-        />
+      
 
         <div className="content content-to-wide">
           <BlogPost title="Catterick taxi guide" date="20 May 2019">

@@ -1,9 +1,5 @@
-import { isMobile } from "react-device-detect";
-import Navbar from "./navbar/Navbar";
-import CallButton from "./CallButton";
 import Footer from "./Footer";
 import Head from "next/head";
-
 const Layout = ({
   children,
   title = "",
@@ -31,9 +27,7 @@ const Layout = ({
           ></script>
         )}
       </Head>
-      <Navbar />
       {children}
-      {isMobile && <CallButton />}
       <Footer />
     </div>
   );

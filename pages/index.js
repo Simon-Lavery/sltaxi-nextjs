@@ -1,13 +1,9 @@
-import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/homepage/Home.module.css";
 import Layout from "../components/layout/Layout";
-import Hero from "../components/layout/Hero";
-import Banner from "../components/homepage/Banner";
 import Perks from "../components/homepage/Perks";
-import Offer from "../components/homepage/Offer";
 import Picture from "../components/Picture";
-import PictureRow from "../components/PictureRow";
+import Header from "../components/header";
 
 const schema = {
   "@context": "https://schema.org/",
@@ -37,91 +33,74 @@ export default function Home() {
         canonical="https://sltaxicatterick.co.uk"
         schema={schema}
       >
-        <Hero
-          imgURL="googlecover"
-          altText="picture of SLTaxi Catterick taxi"
-          ext=".jpg"
-        />
-        <Banner info="Please note: We have some extra measures to keep passengers safe">
-          <Link href="/#safeTaxi">
-            <a>find out more</a>
-          </Link>
-        </Banner>
+      <Header
+        title1='Cattericks Best'
+        title2='Taxi Service'
+        intro=' We are a Professional, Independent taxi service in Catterick
+                  garrison, serving the Catterick, Scotton, Colburn area. We
+                  pride ourselves on exceptional service and going the extra
+                  mile for our customers.'
+      />
+       
 
         <section className={styles.about}>
           <div className="content">
-            <div className="desktop-row">
-              <div className={styles.textBlock}>
-                <h1>
-                  Professional <br className="mobile-line-break" /> Reliable
-                  Taxis
-                </h1>
-                <p>
-                  We are a Professional, Independent taxi service in Catterick
-                  garrison, serving the Catterick, Scotton, Colburn area. We
-                  pride ourselves on exceptional service and going the extra
-                  mile for our customers. Our taxis are maintained to the
-                  highest standards and we are fully licensed and DBS checked.
-                </p>
+            <div className={styles.aboutText}>
+                <h2>
+                  About us
+                </h2>
                 <p>
                   If you need a taxi for a night out, business trip, airport
                   transfer or shopping trip we won't be beaten on price or
                   service so give us a call and see for yourself.
                 </p>
-              </div>
-
-              <Perks />
+                <p>
+                  Our taxis are maintained to the
+                  highest standards and we are fully licensed and DBS checked. With SLTaxi you book directly with your taxi driver, cutting out the middle man and saving you money.
+                </p>
             </div>
+              <Perks />            
           </div>
         </section>
+
+
         <section className={styles.currentOffers}>
-          <div className="content">
-            <div className="desktop-row">
-              <div className={styles.textBlock}>
-                <h2>Current offers</h2>
-                <p>
-                  Our offers change all the time so check back regularly, also
-                  feel free to leave us an{" "}
-                  <a
-                    href="mailto:sltaxicatterick@gmail.com"
-                    className={styles.inlineLink}
-                  >
-                    email
-                  </a>{" "}
-                  for the kind of offers you would like to see in the future. We
-                  are confident we have the best taxi prices in the Catterick
-                  area so why on give us a call and see if we can beat your
-                  current quote.
-                </p>
-                <p>
-                  To book a taxi using any of our offers just call us on{" "}
-                  <a href="tel:01748 883370" className={styles.inlineLink}>
-                    01748 883370
-                  </a>
-                  , the price is applied automatically to all phone bookings.
-                  And for all other journeys, challenge us to beat your current
-                  taxi quote, we are confident we can beat any local price.
-                </p>
+          <div className='content'>
+            <h2>Current offers</h2>
+                  
+              <div className={styles.offer1}>
+                <img src="/imgs/£25-darlington.jpg" alt="Special offer £25 taxi from Catterick to Darlington or Northallerton"/>
+                <div>
+                  <h3>Offer 1</h3>
+                  <p>Get a taxi from Catterick to Darlington or Northallerton for a maximum price of £25. Thats a saving of around £10 on the normal price.</p>
+                </div>
               </div>
-              <Offer
-                description="Taxi from Catterick garrison to Darlington or Northallerton town center or station for a maximum fare of £25."
-                imgURL="£25-darlington"
-              />
-
-              <Offer
-                description="This offer is valid for any journey within the Garrison, Scotton and Colburn. One pick up and drop off."
-                imgURL="dl9-offer"
-              />
-            </div>
+              
+              <div className={styles.offer2}>
+                <img src="/imgs/dl9-offer.jpg" alt="Special offer taxi journey within DL9 postcode £5 max fare"/>
+                <div>
+                  <h3>Offer 2</h3>
+                  <p>£5 maximum fare for any journey within the DL9 postcode, that is a saving of up to 50%. Journey must be A to B on pick up and one drop off.</p>
+                </div>
+              </div>
+              <div className={styles.conditions}>
+                <h4>Conditions</h4>
+                <p>All offers are on phone bookings only and are applied automatically when booked.</p>
+              </div>
           </div>
         </section>
-        <section className={styles.airportTransfers}>
-          <PictureRow>
-            <Picture
-              imgURL="airport"
-              altText="Picture of an aeroplane landing at an airport"
-            />
-            <div className="content">
+      <section>
+        <div className={styles.airportTransfers}>
+          <div className={styles.pictureRow}>
+            <div className={styles.picture}>
+              <Picture
+                imgURL="airporthero"
+                altText="Picture of an aeroplane landing at an airport"
+              />
+            </div>
+          
+            
+            <div className={styles.text}>
               <h2>Airport transfers</h2>
               <p>
                 We specialise in{" "}
@@ -141,86 +120,18 @@ export default function Home() {
                 quote.
               </p>
             </div>
-          </PictureRow>
-        </section>
-        <section id="safeTaxi" className={styles.safeTaxi}>
-          <PictureRow reverse={true}>
-            <Picture
-              imgURL="screen"
-              altText="Picture of SLTaxi Catterick passenger safety screen"
-            />
-            <div>
-              <h2>Travel safe with us</h2>
-              <p>
-                The safety of passengers and driver are our number 1 priority
-                and we have taken extra measures to keep everyone safe. We are
-                currently only taking a maximum of 3 passengers per journey.
-                Other safety measures we have introduced include:
-              </p>
-              <ul>
-                <li>Screen fitted between driver and passengers</li>
-                <li>Hand gel for customers</li>
-                <li>Contactless payment available in every taxi</li>
-                <li>Touch points cleaned every journey</li>
-                <li>Car deep cleaned after every shift</li>
-              </ul>
-            </div>
-          </PictureRow>
-          <div className="content">
-            <div className={styles.extras}>
-              <div className={styles.textBlock}>
-                <h3>Face masks</h3>
-                <p>
-                  Face masks are required to be worn in every taxi unless you
-                  are exempt. If you require a face mask we can provide you with
-                  a brand new disposable one, just ask your driver.
-                </p>
-              </div>
-              <div className={styles.textBlock}>
-                <h3>Any other concerns</h3>
-                <p>
-                  We are doing everything possible to make your taxi journey
-                  safe, if you need any more information feel free to send us an{" "}
-                  <a
-                    href="mailto:sltaxicatterick@gmail.com"
-                    className={styles.inlineLink}
-                  >
-                    email
-                  </a>
-                  .
-                </p>
-              </div>
-            </div>
           </div>
-        </section>
-        <section className={styles.greatService}>
-          <PictureRow>
-            <Picture imgURL="carinterior" altText="Picture of our taxi" />
-            <div>
-              <h2>Great service</h2>
-              <p>
-                Looking for the premier taxi service in Catterick garrison, our
-                taxis are maintained to the highest possible standards, so where
-                ever need to go you can be sure to have a relaxing, safe and
-                comfortable journey.
-              </p>
-              <p>
-                We accept Card or Contactless payments in every taxi so no need
-                to worry about carrying cash. We also superfast customer wifi
-                and charging facilities to keep you entertained on your journey.
-                Check out some of our five star reviews and see what our
-                customers think.
-              </p>
+        </div>
+
+        <div className={styles.stationTransfers}>
+          <div className={styles.pictureRow}>
+            <div className={styles.picture}>
+              <Picture
+                imgURL="stationhero"
+                altText="Picture of a train at the platform in Darlington station"
+              />
             </div>
-          </PictureRow>
-        </section>
-        <section className={styles.stationTransfers}>
-          <PictureRow reverse={true}>
-            <Picture
-              imgURL="station"
-              altText="Picture of a train at the platform in Darlington station"
-            />
-            <div>
+            <div className={`${styles.text} ${styles.reverse}`}>
               <h2>Station transfers</h2>
               <p>
                 Get Unbeatable taxi prices on
@@ -244,8 +155,83 @@ export default function Home() {
                 .
               </p>
             </div>
-          </PictureRow>
+          </div>
+          </div>
         </section>
+        <section id="safeTaxi" className={styles.safeTaxi}>
+          <div className={styles.pictureRow}>
+            <div className={styles.picture}>
+              <Picture
+                imgURL="screen"
+                altText="Picture of SLTaxi Catterick passenger safety screen"
+              />
+            </div>
+            <div className={`${styles.text} ${styles.reverse}`}>
+              <h2>Travel safe with us</h2>
+              <p>
+                The safety of passengers and driver are our number 1 priority
+                and we have taken extra measures to keep everyone safe. We are
+                currently only taking a maximum of 3 passengers per journey.
+                Other safety measures we have introduced include:
+              </p>
+              <ul>
+                <li>Screen fitted between driver and passengers</li>
+                <li>Hand gel for customers</li>
+                <li>Contactless payment available in every taxi</li>
+                <li>Touch points cleaned every journey</li>
+                <li>Car deep cleaned after every shift</li>
+              </ul>
+            </div>
+          </div>
+          <div className={styles.pictureRow}>
+              <div className={styles.text}>
+                <h3>Face masks</h3>
+                <p>
+                  Face masks are required to be worn in every taxi unless you
+                  are exempt. If you require a face mask we can provide you with
+                  a brand new disposable one, just ask your driver.
+                </p>
+              </div>
+              <div className={styles.text}>
+                <h3>Any other concerns</h3>
+                <p>
+                  We are doing everything possible to make your taxi journey
+                  safe, if you need any more information feel free to send us an{" "}
+                  <a
+                    href="mailto:sltaxicatterick@gmail.com"
+                    className={styles.inlineLink}
+                  >
+                    email
+                  </a>
+                  .
+                </p>
+              </div>
+          </div>
+        </section>
+        <section className={styles.greatService}>
+          <div className={styles.pictureRow}>
+            <div className={styles.picture}>
+              <Picture imgURL="interior" altText="Picture of our taxi" />
+            </div>
+            <div className={styles.text}>
+              <h2>Great service</h2>
+              <p>
+                Looking for the premier taxi service in Catterick garrison, our
+                taxis are maintained to the highest possible standards, so where
+                ever need to go you can be sure to have a relaxing, safe and
+                comfortable journey.
+              </p>
+              <p>
+                We accept Card or Contactless payments in every taxi so no need
+                to worry about carrying cash. We also superfast customer wifi
+                and charging facilities to keep you entertained on your journey.
+                Check out some of our five star reviews and see what our
+                customers think.
+              </p>
+            </div>
+          </div>
+        </section>
+       
       </Layout>
     </div>
   );

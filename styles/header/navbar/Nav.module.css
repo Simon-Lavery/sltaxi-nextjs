@@ -4,10 +4,10 @@
   right: 0;
   margin: 0;
   transition: all 0.4s;
-  background-color: var(--primary-light);
   width: 0;
   overflow: hidden;
   border: none;
+  background-color: white;
 }
 
 .nav ul {
@@ -16,7 +16,6 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid grey;
 }
 
 .nav ul li {
@@ -30,18 +29,19 @@
 .nav ul li a {
   display: inline-block;
   width: 70%;
+  white-space: nowrap;
+}
+
+.active {
+  color: var(--accent-dark);
 }
 
 .show {
   width: 100vw;
-  opacity: 0.9;
   z-index: 1;
 }
 
-.active {
-  border-left: 4px solid var(--taxi-yellow);
-}
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .nav {
     position: static;
     height: 100%;
@@ -59,9 +59,18 @@
     border: none;
   }
   .nav ul li {
-    margin: 0 40px 0 0;
-    width: auto;
-    font-size: 1.3rem;
-    text-align: left;
+    margin: 0 0 0 0px;
+    font-size: 1rem;
+    width: fit-content;
+  }
+
+  .nav ul li a {
+    width: fit-content;
+    text-align: right;
+  }
+
+  .nav ul li a:hover {
+    color: var(--primary-dark);
+    padding: 0;
   }
 }

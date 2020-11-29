@@ -3,11 +3,11 @@ const Picture = ({ imgURL, altText }) => {
   return (
     <picture className={styles.picture}>
       <source
-        srcSet={`/imgs/${imgURL}.jpg`}
+        srcSet={`/imgs/${imgURL}mobile.jpg`}
         type="image/jpg"
-        media="(max-width: 768px"
+        media="(max-width: 768px)"
       />
-      <source srcSet={`/imgs/${imgURL}desktop.jpg`} type="image/jpg" />
+      <source srcSet={`/imgs/${imgURL}.jpg`} type="image/jpg" />
       <img src={`/imgs/${imgURL}.jpg`} alt={altText} />
     </picture>
   );

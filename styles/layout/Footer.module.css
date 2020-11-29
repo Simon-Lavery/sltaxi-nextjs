@@ -1,9 +1,12 @@
 .footer {
-  background-color: var(--primary-dark);
+  background-color: var(--accent-dark);
   color: var(--primary-light);
   padding: 40px 0 0;
 }
 
+.footer a {
+  color: var(--primary-light);
+}
 .contact {
   padding: 20px 0;
 }
@@ -22,8 +25,11 @@
 .privacy {
   display: inline-block;
   border-radius: 5px;
-  color: var(--primary-dark);
   margin: 20px 0;
   padding: 3px 5px;
   background-color: var(--primary-light);
+}
+
+.privacy a {
+  color: var(--primary-dark);
 }

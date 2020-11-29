@@ -1,0 +1,181 @@
+.header {
+  background: white;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.headerInfo {
+  width: 100%;
+}
+
+.skew {
+  display: none;
+}
+
+.headerInfo h1 {
+  line-height: 1;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+}
+
+.headerInfo h1 span {
+  letter-spacing: 0.01ch;
+  display: block;
+}
+
+.headerInfo h1 span:nth-of-type(2) {
+  color: var(--accent-dark);
+}
+
+.headerImg {
+  overflow: hidden;
+  height: 200px;
+  width: 100%;
+}
+
+.headerImg img {
+  width: 100%;
+  max-width: 100%;
+  margin-top: var(--element-margin-top);
+}
+
+.headerButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--element-margin-top);
+}
+
+.headerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 49%;
+  text-align: center;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 15px 0;
+  font-weight: bold;
+}
+
+.emailButton {
+  border-color: var(--accent-dark);
+  color: var(--accent-dark);
+}
+
+.callButton {
+  background-color: var(--taxi-yellow);
+  border-color: var(--taxi-yellow);
+  color: var(--primary-dark);
+}
+
+.headerButton span {
+  display: flex;
+  justify-items: baseline;
+  margin: 0 2px 0 10px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    justify-content: center;
+  }
+
+  .headerInfo {
+    text-align: center;
+  }
+
+  .headerButtons {
+    width: 70%;
+    margin: var(--element-margin-top) auto;
+  }
+  .headerImg {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .headerButtons {
+    width: 60%;
+  }
+
+  .headerInfo p {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .headerInfo h1 span {
+    display: inline-block;
+  }
+
+  .headerInfo h1 span:nth-of-type(2) {
+    margin: 0 0 0 10px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .headerInfo {
+    width: 45%;
+    text-align: left;
+  }
+
+  .headerInfo h1 {
+    margin-top: 30px;
+    font-size: 3.5rem;
+  }
+
+  .skew {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -70px;
+    background-color: white;
+    height: 100%;
+    width: 140px;
+    transform: skewX(-12deg);
+  }
+
+  .headerInfo p {
+    width: 100%;
+  }
+
+  .headerButtons {
+    width: 80%;
+    margin: 50px 0;
+  }
+
+  .headerImg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+  }
+
+  .headerImg img {
+    margin-top: 0;
+  }
+
+  .headerInfo h1 span:nth-of-type(2) {
+    margin: 0;
+  }
+
+  .headerButton {
+    transition: all 0.2s;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .callButton:hover,
+  .emailButton:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .emailButton:hover {
+    color: white;
+    background-color: var(--accent-dark);
+  }
+  .callButton {
+    margin: 0 0 0 20px;
+  }
+}

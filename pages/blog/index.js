@@ -1,9 +1,7 @@
 import Layout from "../../components/layout/Layout";
-import Hero from "../../components/layout/Hero";
 import HomeLink from "../../components/HomeLink";
-import styles from "../../styles/Blogs.module.css";
 import Link from "next/link";
-
+import Header from "../../components/header"
 export default function Index() {
   return (
     <div>
@@ -13,13 +11,13 @@ export default function Index() {
         keywords="taxi catterick, airport transfers, catterick taxi, taxi information"
         canonical="https://sltaxicatterick.co.uk/blogs"
       >
-        <Hero
-          imgURL="bloghero"
-          altText="Background image with words related to social media"
-          ext=".jpg"
+        <Header
+          title1="Taxi guide &"
+          title2="Local info"
+          intro="Get guides on how to save money on taxis or how taxis work in the area, also we have reccomended days out if you are stuck for something to do."
         />
-        <div className={styles.blogs}>
-          <div className="content content-to-wide">
+        <section>
+          <div className="content">
             <h2>Catterick taxi guide</h2>
             <p>
               <time>17th July 2019</time>
@@ -46,7 +44,7 @@ export default function Index() {
             </p>
             <HomeLink />
           </div>
-        </div>
+        </section>
       </Layout>
     </div>
   );

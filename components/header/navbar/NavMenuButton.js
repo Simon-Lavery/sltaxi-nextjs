@@ -1,4 +1,4 @@
-import styles from "../../../styles/layout/navbar/NavMenuButton.module.css";
+import styles from "../../../styles/header/navbar/NavMenuButton.module.css";
 import { IconContext } from "react-icons";
 import { FaBars } from "react-icons/fa";
 const NavMenuButton = ({ toggleMenu }) => {
@@ -10,9 +10,10 @@ const NavMenuButton = ({ toggleMenu }) => {
         }}
         className={styles.menuButton}
         type="button"
-      >
+        aria-haspopup="true">
         <IconContext.Provider value={{ className: styles.icon }}>
           <div>
+            <span className="sr-only">Open menu button</span>
             <FaBars />
           </div>
         </IconContext.Provider>

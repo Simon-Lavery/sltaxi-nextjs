@@ -36,15 +36,13 @@ class CustomDocument extends Document {
           <script
             type="text/javascript"
             src="//cdn.iubenda.com/cs/iubenda_cs.js"
-            charset="UTF-8"
+            charSet="UTF-8"
             async
           ></script>
 
-          <link
-            href="https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web:wght@600&display=swap"
-            rel="stylesheet"
-          />
-        </Head>
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@400;800&display=swap" rel="stylesheet"/>
+      </Head>
         <body>
           <Main />
           <NextScript />

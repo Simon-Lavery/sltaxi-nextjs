@@ -1,8 +1,7 @@
 import Layout from "../components/layout/Layout";
-import Hero from "../components/layout/Hero";
 import HomeLink from "../components/HomeLink";
-import styles from "../styles/Airport.module.css";
 import Link from "next/link";
+import Header from '../components/header'
 
 const schema = {
   "@context": "https://schema.org/",
@@ -32,21 +31,22 @@ export default function Airport() {
         canonical="https://sltaxicatterick.co.uk/airport"
         schema={schema}
       >
-        <Hero
-          imgURL="airporthero"
-          altText="Picture of a plane landing at an airport"
-          ext=".jpg"
-        />
-        <div className={styles.airport}>
-          <div className="content content-to-wide">
-            <h1>Airport transfers</h1>
-            <p>
-              Are you going on holiday or travelling for business?, need a taxi
-              to the airport ?. We specialise in taxis to or from any UK airport
+
+      <Header 
+        title1="Reliable"
+        title2="Airport transfers"
+        intro="We specialise in taxis to or from any UK airport
               so why worry about parking or leaving your car when you could get
-              a taxi for cheaper than you might think.
-            </p>
+              a taxi for cheaper than you might think."
+      />
+
+
+        
+        <section>
+          <div className="content">
             <p>
+            Are you going on holiday or travelling for business?, need a taxi
+              to the airport ?. 
               Our taxis are maintained to the highest standards and we also
               provide customer wifi and phone charging facilities in every taxi.
               So where ever you need to go, you can trust to get you there
@@ -60,6 +60,10 @@ export default function Airport() {
               see if we can beat it. We would recommend booking your airport
               transfer in advance if possible to guarantee availability.
             </p>
+            </div>
+        </section>
+        <section>
+          <div className='content'>
             <h2>Relax</h2>
             <p>
               We have lots of luggage space, enough for 3 - 4 large suitcases.
@@ -90,6 +94,11 @@ export default function Airport() {
               you need some assistance when you get off the plane just let us
               know when you book your taxi and we can meet you in the airport.
             </p>
+            </div>
+            </section>
+
+            <section>
+              <div className='content'>
             <h2>Card payments</h2>
             <p>
               We accept card and contactless payments, including Apple and
@@ -97,6 +106,10 @@ export default function Airport() {
               If you prefer, you can even pay for your taxi in advance with our
               payment link service.
             </p>
+            </div>
+          </section>
+          <section>
+          <div className='content'>
             <h2>Taxi to the station</h2>
             <p>
               If you need to catch a train to the Airport we have the best price{" "}
@@ -109,8 +122,8 @@ export default function Airport() {
             </p>
 
             <HomeLink />
-          </div>
-        </div>
+            </div>
+          </section>
       </Layout>
     </div>
   );

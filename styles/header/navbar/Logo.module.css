@@ -1,21 +1,13 @@
 .logo a {
   display: inline-block;
-  width: 7rem;
+  width: 6rem;
 }
 
 .logo a img {
   width: 100%;
 }
 
-.tagline {
-  display: block;
-  font-size: 0.8rem;
-}
-
 @media (min-width: 768px) {
-  .logo a {
-    width: 8rem;
-  }
   .tagline {
     font-size: 1rem;
   }

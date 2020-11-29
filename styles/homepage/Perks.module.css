@@ -1,12 +1,17 @@
 .perks {
-  text-align: center;
-  margin: 40px 0 0;
-  padding: 20px 0 0;
+  margin: 40px auto 0;
 }
 
 @media (min-width: 768px) {
   .perks {
     padding: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .perks {
+    display: inline-block;
     width: 50%;
   }
 }

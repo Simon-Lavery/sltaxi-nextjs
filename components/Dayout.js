@@ -1,5 +1,4 @@
 import Picture from "../components/Picture";
-import PictureRow from "../components/PictureRow";
 import styles from "../styles/Dayout.module.css";
 import { FaCompass, FaPoundSign, FaGlobe } from "react-icons/fa";
 const Dayout = ({
@@ -16,7 +15,6 @@ const Dayout = ({
   return (
     <div>
       <div className={styles.dayout} id={id}>
-        <PictureRow reverse={true}>
           <Picture imgURL={img} altText={`Picture from ${title}`} />
           <div className="text-block">
             <h2>{title}</h2>
@@ -24,7 +22,6 @@ const Dayout = ({
             <p>{about}</p>
             <p>{facilities}</p>
           </div>
-        </PictureRow>
         <div className={styles.travelInfo}>
           <p>
             <FaCompass />

@@ -1,0 +1,39 @@
+.pictureRow img {
+  width: 100%;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.pictureRow .text {
+  width: var(--content-width);
+  margin: var(--element-margin-top) auto var(--section-padding);
+}
+
+@media (min-width: 768px) {
+  .pictureRow .picture {
+  }
+}
+
+@media (min-width: 1024px) {
+  .pictureRow {
+    width: var(--content-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .pictureRow .picture {
+    width: 45%;
+  }
+
+  .pictureRow .text {
+    width: 45%;
+    margin: 0 0 0 10%;
+  }
+
+  .pictureRow .reversed {
+    width: 45%;
+    margin: 0 10% 0 0;
+    order: -1;
+  }
+}

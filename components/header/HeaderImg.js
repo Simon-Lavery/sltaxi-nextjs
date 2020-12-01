@@ -1,8 +1,9 @@
 import {useRouter} from 'next/router';
+import Image from 'next/image';
 
 const HeaderImg = () => {
   const router = useRouter();
-  const imgURL = `/imgs${router.pathname}hero`;
+  const imgURL = `/imgs${router.pathname}hero.jpg`;
 
   const altTags = {
     '/': 'Lady in a taxi on the phone',
@@ -11,10 +12,7 @@ const HeaderImg = () => {
     '/blog': 'Picture of a computer keyboard'
   }
   return (
-    <picture>
-      <source srcSet={`${imgURL}mobile.jpg`} media="(max-width: 768px)"/>
-      <img src={`${imgURL}.jpg`} alt={altTags[router.pathname]}/>
-    </picture>
+    <Image src={imgURL} layout="fill" alt={altTags[router.pathname]}/>
   )
 }
 

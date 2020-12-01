@@ -5,9 +5,9 @@ const Picture = ({ imgURL, altText }) => {
       <source
         srcSet={`/imgs/${imgURL}mobile.jpg`}
         type="image/jpg"
-        media="(max-width: 768px)"
+        media="(min-width: 768px)"
+        alt={altText}
       />
-      <source srcSet={`/imgs/${imgURL}.jpg`} type="image/jpg" />
       <img src={`/imgs/${imgURL}.jpg`} alt={altText} />
     </picture>
   );

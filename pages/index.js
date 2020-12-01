@@ -2,9 +2,9 @@ import Link from "next/link";
 import styles from "../styles/homepage/Home.module.css";
 import Layout from "../components/layout/Layout";
 import Perks from "../components/homepage/Perks";
-import Picture from "../components/Picture";
 import Header from "../components/header";
-
+import PictureRow from "../components/PictureRow";
+import Image from 'next/image'
 const schema = {
   "@context": "https://schema.org/",
   "@type": "TaxiService",
@@ -36,7 +36,7 @@ export default function Home() {
       <Header
         title1='Cattericks Best'
         title2='Taxi Service'
-        intro=' We are a Professional, Independent taxi service in Catterick
+        intro='We are a Professional, Independent taxi service in Catterick
                   garrison, serving the Catterick, Scotton, Colburn area. We
                   pride ourselves on exceptional service and going the extra
                   mile for our customers.'
@@ -63,22 +63,26 @@ export default function Home() {
           </div>
         </section>
 
-
+       
         <section className={styles.currentOffers}>
-          <div className='content'>
+          <div className='content-narrow'>
             <h2>Current offers</h2>
                   
               <div className={styles.offer1}>
-                <img src="/imgs/£25-darlington.jpg" alt="Special offer £25 taxi from Catterick to Darlington or Northallerton"/>
-                <div>
+                <div className={styles.img}>
+                <Image src="/imgs/£25-darlington.jpg" layout='fill' alt="Special offer £25 taxi from Catterick to Darlington or Northallerton"/>
+                </div>
+                <div className={styles.offerDetails}>
                   <h3>Offer 1</h3>
                   <p>Get a taxi from Catterick to Darlington or Northallerton for a maximum price of £25. Thats a saving of around £10 on the normal price.</p>
                 </div>
               </div>
               
               <div className={styles.offer2}>
-                <img src="/imgs/dl9-offer.jpg" alt="Special offer taxi journey within DL9 postcode £5 max fare"/>
-                <div>
+                <div className={styles.img}>
+                <Image src="/imgs/dl9-offer.jpg" layout='fill' alt="Special offer taxi journey within DL9 postcode £5 max fare"/>
+                </div>
+                <div className={styles.offerDetails}>
                   <h3>Offer 2</h3>
                   <p>£5 maximum fare for any journey within the DL9 postcode, that is a saving of up to 50%. Journey must be A to B on pick up and one drop off.</p>
                 </div>
@@ -89,18 +93,17 @@ export default function Home() {
               </div>
           </div>
         </section>
-      <section>
-        <div className={styles.airportTransfers}>
-          <div className={styles.pictureRow}>
-            <div className={styles.picture}>
-              <Picture
-                imgURL="airporthero"
-                altText="Picture of an aeroplane landing at an airport"
-              />
-            </div>
-          
-            
-            <div className={styles.text}>
+
+      <section className={styles.airportTransfers}>
+        <div>
+        <PictureRow 
+          imgURL='airport.jpg'
+          height={400}
+          width={750}
+          altText='picture of a plane landing at an airport'
+          reverse={false}
+        >
+        <div>
               <h2>Airport transfers</h2>
               <p>
                 We specialise in{" "}
@@ -120,22 +123,21 @@ export default function Home() {
                 quote.
               </p>
             </div>
-          </div>
+        </PictureRow>
         </div>
-
         <div className={styles.stationTransfers}>
-          <div className={styles.pictureRow}>
-            <div className={styles.picture}>
-              <Picture
-                imgURL="stationhero"
-                altText="Picture of a train at the platform in Darlington station"
-              />
-            </div>
-            <div className={`${styles.text} ${styles.reverse}`}>
+        <PictureRow 
+          imgURL='station.jpg'
+          height={400}
+          width={750}
+          altText='picture of a plane landing at an airport'
+          reverse={true}
+        >
+            <div>
               <h2>Station transfers</h2>
               <p>
                 Get Unbeatable taxi prices on
-                <Link href="station">
+                <Link href="/station">
                   <a className="inline-link"> station transfers </a>
                 </Link>
                 from Catterick garrison, We currently have a special offer, taxi
@@ -155,18 +157,17 @@ export default function Home() {
                 .
               </p>
             </div>
-          </div>
+          </PictureRow>
           </div>
         </section>
         <section id="safeTaxi" className={styles.safeTaxi}>
-          <div className={styles.pictureRow}>
-            <div className={styles.picture}>
-              <Picture
-                imgURL="screen"
-                altText="Picture of SLTaxi Catterick passenger safety screen"
-              />
-            </div>
-            <div className={`${styles.text} ${styles.reverse}`}>
+        <PictureRow 
+          imgURL='screen.jpg'
+          height={400}
+          width={750}
+          altText='picture of the safety screen in our taxi'
+          reverse={true}
+        >
               <h2>Travel safe with us</h2>
               <p>
                 The safety of passengers and driver are our number 1 priority
@@ -181,39 +182,40 @@ export default function Home() {
                 <li>Touch points cleaned every journey</li>
                 <li>Car deep cleaned after every shift</li>
               </ul>
-            </div>
-          </div>
-          <div className={styles.pictureRow}>
-              <div className={styles.text}>
-                <h3>Face masks</h3>
-                <p>
+            
+         </PictureRow>
+         <div className={styles.extras}>
+          <div className='content-narrow'>
+            <h3>Face masks</h3>
+              <p>
                   Face masks are required to be worn in every taxi unless you
                   are exempt. If you require a face mask we can provide you with
                   a brand new disposable one, just ask your driver.
-                </p>
-              </div>
-              <div className={styles.text}>
-                <h3>Any other concerns</h3>
-                <p>
+              </p>
+            
+              <h3>Any other concerns</h3>
+              <p>
                   We are doing everything possible to make your taxi journey
                   safe, if you need any more information feel free to send us an{" "}
-                  <a
+                <a
                     href="mailto:sltaxicatterick@gmail.com"
                     className={styles.inlineLink}
                   >
                     email
-                  </a>
+                </a>
                   .
-                </p>
-              </div>
+              </p>
+            </div>
           </div>
         </section>
         <section className={styles.greatService}>
-          <div className={styles.pictureRow}>
-            <div className={styles.picture}>
-              <Picture imgURL="interior" altText="Picture of our taxi" />
-            </div>
-            <div className={styles.text}>
+        <PictureRow 
+          imgURL='car.jpg'
+          height={400}
+          width={750}
+          altText='picture of our taxi'
+          reverse={true}
+        >
               <h2>Great service</h2>
               <p>
                 Looking for the premier taxi service in Catterick garrison, our
@@ -228,8 +230,7 @@ export default function Home() {
                 Check out some of our five star reviews and see what our
                 customers think.
               </p>
-            </div>
-          </div>
+          </PictureRow>
         </section>
        
       </Layout>

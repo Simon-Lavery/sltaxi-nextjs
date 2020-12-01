@@ -16,7 +16,7 @@ const Header = (
   
   const handleCall = (e) => {
     e.preventDefault();
-    if(isMobile){
+    if(isMobile && window.innerWidth < 750){
       window.open('tel:01748883370')
     }
     else{
@@ -26,7 +26,6 @@ const Header = (
   return (
     <header className={styles.header}>
       {/* header info */}
-      <div className='content'>
         <div className={styles.headerInfo}>
         <Navbar/>
         <h1>
@@ -53,10 +52,9 @@ const Header = (
           </a>
         </div>
       </div>
-      </div>
       {/* header img */}
       <div className={styles.headerImg}>
-      <div className={styles.skew} aria-hidden="true"></div>
+        <div className={styles.skew} aria-hidden="true"></div>
         <HeaderImg/>
       </div>
     </header>

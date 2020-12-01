@@ -1,0 +1,6 @@
+.intro,
+.specialOffers,
+.stationPickups,
+.airportTransfers {
+  padding: var(--section-padding) 0;
+}

@@ -1,7 +1,9 @@
 import Layout from "../../components/layout/Layout";
 import HomeLink from "../../components/HomeLink";
 import Link from "next/link";
-import Header from "../../components/header"
+import Header from "../../components/header";
+import styles from '../../styles/blog.module.css';
+
 export default function Index() {
   return (
     <div>
@@ -16,8 +18,9 @@ export default function Index() {
           title2="Local info"
           intro="Get guides on how to save money on taxis or how taxis work in the area, also we have reccomended days out if you are stuck for something to do."
         />
-        <section>
-          <div className="content">
+        <section className={styles.blogs}>
+          <div className="content-narrow">
+            <div className={styles.blog}>
             <h2>Catterick taxi guide</h2>
             <p>
               <time>17th July 2019</time>
@@ -30,6 +33,8 @@ export default function Index() {
                 <a className="inline-link"> ...Read more</a>
               </Link>
             </p>
+            </div>
+            <div className={styles.blog}>
             <h2>Days out in the local area</h2>
             <p>
               <time>25th July 2019</time>
@@ -42,6 +47,7 @@ export default function Index() {
                 <a className="inline-link"> ...Read more</a>
               </Link>
             </p>
+            </div>
             <HomeLink />
           </div>
         </section>

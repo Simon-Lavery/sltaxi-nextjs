@@ -1,4 +1,11 @@
 /*--------------------
+ABOUT
+----------------------*/
+
+.about {
+  padding: var(--section-padding) 0;
+}
+/*--------------------
 SAFETAXI
 ----------------------*/
 
@@ -15,6 +22,7 @@ SAFETAXI
 .safeTaxi a {
   color: var(--accent-light);
 }
+
 /* -----------------------
 CURRENT OFFERS
 -------------------------*/
@@ -22,27 +30,44 @@ CURRENT OFFERS
 .currentOffers {
   background: var(--primary-light);
   color: #444;
+  padding: var(--section-padding) 0;
 }
 
-.currentOffers img {
+.currentOffers .img {
+  position: relative;
+  height: 160px;
   margin: 0;
   max-width: 100%;
   width: 100%;
 }
 
+.currentOffers .img img {
+  object-fit: cover;
+}
+
+.currentOffers h2 {
+  color: var(--accent-dark);
+}
+.offerDetails {
+  padding: 10px;
+}
 .currentOffers h3 {
-  margin: 15px 0 0 0;
+  margin: 0;
+  color: var(--accent-dark);
 }
 
 .currentOffers p {
   margin: 5px 0 0 0;
 }
 
+.currentOffers .conditions p {
+  font-size: 0.9rem;
+}
+
 .offer1,
 .offer2 {
   background-color: #ddd;
   margin: 10px 0 0 0;
-  padding: 10px;
   font-size: 0.9rem;
 }
 
@@ -52,11 +77,41 @@ CURRENT OFFERS
   padding: 20px 0;
 }
 
+/*--------------------
+AIRPORT TRANSFERS
+----------------------*/
+
+.airportTransfers,
+.safeTaxi,
+.greatService,
+.extras {
+  padding: 0 0 var(--section-padding);
+}
+
+@media (min-width: 400px) {
+  .currentOffers .img {
+    height: 200px;
+  }
+}
 @media (min-width: 768px) {
+  /*------------------------
+  STATION TRANSFERS
+  --------------------------*/
+
+  .stationTransfers {
+    padding-top: 50px;
+  }
   /*------------------------
   CURRENT OFFERS
   --------------------------*/
 
+  .currentOffers .img {
+    height: 300px;
+  }
+
+  .offerDetails {
+    padding: 30px 10px;
+  }
   /*--------------------------
   AIRPORT TRANSFERS
   ---------------------------*/
@@ -67,9 +122,18 @@ CURRENT OFFERS
 }
 
 @media (min-width: 1024px) {
+  .airportTransfers,
+  .safeTaxi,
+  .greatService {
+    padding-top: var(--section-padding);
+  }
   /* -------------------
   ABOUT STYLES
   ----------------------*/
+
+  .about {
+    padding-top: 0;
+  }
   .aboutText {
     display: inline-block;
     width: 50%;
@@ -84,14 +148,22 @@ CURRENT OFFERS
     display: flex;
   }
 
-  .offer1 img,
-  .offer2 img {
+  .offer1 .img,
+  .offer2 .img {
+    width: 50%;
+  }
+
+  .currentOffers .img {
+    height: 200px;
+  }
+
+  .offerDetails {
     width: 50%;
   }
 
   .offer1 h3,
   .offer2 h3 {
-    padding: 30px 0 0 30px;
+    padding: 0 0 0 30px;
   }
 
   .offer1 p,
@@ -147,11 +219,14 @@ CURRENT OFFERS
     margin: 0 10% 0 0;
   }
 
-  .offer1 img,
-  .offer2 img {
+  .offer1 .img,
+  .offer2 .img {
     width: 100%;
   }
 
+  .offerDetails {
+    width: 100%;
+  }
   .offer1 h3,
   .offer2 h3 {
     padding: 0;
@@ -160,5 +235,7 @@ CURRENT OFFERS
   .offer1 p,
   .offer2 p {
     padding: 0;
+    width: 100%;
+    margin: 0;
   }
 }

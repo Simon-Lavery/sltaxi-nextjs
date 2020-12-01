@@ -2,6 +2,7 @@ import Layout from "../components/layout/Layout";
 import HomeLink from "../components/HomeLink";
 import Link from "next/link";
 import Header from '../components/header';
+import styles from '../styles/station.module.css';
 
 const schema = {
   "@context": "http://schema.org",
@@ -39,8 +40,8 @@ export default function Station() {
                 service anywhere else."
        />
         
-          <section>
-            <div className='content'>
+          <section className={styles.intro}>
+            <div className='content-narrow'>
             <h2>Need a taxi to the Station?</h2>
             <p>
               We have superfast wifi and charging facilites in every taxi so
@@ -58,8 +59,8 @@ export default function Station() {
             </p>
             </div>
           </section>
-          <section>
-          <div className='content'>
+          <section className={styles.specialOffers}>
+          <div className='content-narrow'>
               <h2>Special offers</h2>
               <p>
                 We can provide a taxi from Catterick garrison to Darlington or
@@ -81,8 +82,8 @@ export default function Station() {
               </div>
               </section>
 
-              <section>
-              <div className='content'>
+              <section className={styles.stationPickups}>
+              <div className='content-narrow'>
               <h2>Station pickups</h2>
               <p>
                 If you are coming in to Darlington or Northallerton station and
@@ -111,9 +112,9 @@ export default function Station() {
               </p>
               </div>
               </section>
-              <section>
-              <div className='content'>
-              <h2>Airport transfer</h2>
+              <section className={styles.airportTransfers}>
+              <div className='content-narrow'>
+              <h2>Airport transfers</h2>
               <p>
                 We also have unbeatable{" "}
                 <Link href="/airport">

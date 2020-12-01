@@ -1,0 +1,6 @@
+.intro,
+.relax,
+.cardPayments,
+.station {
+  padding: var(--section-padding) 0;
+}

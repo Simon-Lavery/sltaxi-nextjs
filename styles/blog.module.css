@@ -1,0 +1,7 @@
+.blogs {
+  padding: var(--section-padding) 0;
+}
+
+.blog {
+  margin-top: 50px;
+}

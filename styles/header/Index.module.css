@@ -1,12 +1,10 @@
 .header {
   background: white;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .headerInfo {
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .skew {
@@ -29,15 +27,14 @@
 }
 
 .headerImg {
-  overflow: hidden;
+  margin-top: 20px;
+  position: relative;
   height: 200px;
-  width: 100%;
+  overflow: hidden;
 }
 
 .headerImg img {
-  width: 100%;
-  max-width: 100%;
-  margin-top: var(--element-margin-top);
+  object-fit: cover;
 }
 
 .headerButtons {
@@ -77,51 +74,38 @@
 }
 
 @media (min-width: 768px) {
-  .header {
-    justify-content: center;
-  }
-
   .headerInfo {
     text-align: center;
+  }
+
+  .headerImg {
+    margin-top: 50px;
+    height: 400px;
   }
 
   .headerButtons {
     width: 70%;
     margin: var(--element-margin-top) auto;
   }
-  .headerImg {
-    height: 300px;
-  }
 }
 
 @media (min-width: 1024px) {
-  .headerButtons {
-    width: 60%;
+  .header {
+    display: flex;
+    margin: 0;
+    padding: 0;
   }
 
-  .headerInfo p {
-    width: 80%;
-    margin: 20px auto;
-  }
-
-  .headerInfo h1 span {
-    display: inline-block;
-  }
-
-  .headerInfo h1 span:nth-of-type(2) {
-    margin: 0 0 0 10px;
-  }
-}
-
-@media (min-width: 1025px) {
   .headerInfo {
-    width: 45%;
+    width: 60%;
+    padding-left: 5%;
     text-align: left;
   }
 
-  .headerInfo h1 {
-    margin-top: 30px;
-    font-size: 3.5rem;
+  .headerImg {
+    margin: 0;
+    width: 40%;
+    height: 500px;
   }
 
   .skew {
@@ -129,31 +113,49 @@
     position: absolute;
     top: 0;
     left: -70px;
+    z-index: 10;
     background-color: white;
     height: 100%;
     width: 140px;
     transform: skewX(-12deg);
   }
 
-  .headerInfo p {
-    width: 100%;
+  .headerButtons {
+    width: 70%;
+    margin-left: 0;
   }
 
-  .headerButtons {
+  .headerInfo p {
     width: 80%;
-    margin: 50px 0;
+    margin: 20px 0;
+  }
+
+  .headerInfo h1 span {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1025px) {
+  .headerInfo {
+    width: 50%;
   }
 
   .headerImg {
-    position: absolute;
-    top: 0;
-    right: 0;
     width: 50%;
-    height: 100%;
   }
 
-  .headerImg img {
-    margin-top: 0;
+  .headerInfo h1 {
+    margin-top: 30px;
+    font-size: 3.5rem;
+  }
+
+  .headerInfo p {
+    width: 90%;
+  }
+
+  .headerButtons {
+    width: 70%;
+    margin: 50px 0;
   }
 
   .headerInfo h1 span:nth-of-type(2) {

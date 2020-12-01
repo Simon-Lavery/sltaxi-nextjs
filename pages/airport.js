@@ -2,6 +2,7 @@ import Layout from "../components/layout/Layout";
 import HomeLink from "../components/HomeLink";
 import Link from "next/link";
 import Header from '../components/header'
+import styles from '../styles/airport.module.css';
 
 const schema = {
   "@context": "https://schema.org/",
@@ -14,7 +15,7 @@ const schema = {
       areaServed: "Catterick garrison",
     },
     telephone: "01748 883370",
-    image: "https://sltaxicatterick.co.uk/imgs/googlecover.jpg",
+    image: "https://sltaxicatterick.co.uk/imgs/airport.jpg",
     logo: "https://sltaxicatterick.co.uk/imgs/logo3.png",
     slogan: "Unbeatable prices, Unrivalled service",
   },
@@ -42,11 +43,12 @@ export default function Airport() {
 
 
         
-        <section>
-          <div className="content">
+        <section className={styles.intro}>
+          <div className="content-narrow">
+            <h2>Get the best price from us</h2>
             <p>
-            Are you going on holiday or travelling for business?, need a taxi
-              to the airport ?. 
+              Are you going on holiday or travelling for business?, need a taxi
+              from Catterick garrison to any UK Airport ?. Get an unbeatable price from us.
               Our taxis are maintained to the highest standards and we also
               provide customer wifi and phone charging facilities in every taxi.
               So where ever you need to go, you can trust to get you there
@@ -62,8 +64,8 @@ export default function Airport() {
             </p>
             </div>
         </section>
-        <section>
-          <div className='content'>
+        <section className={styles.relax}>
+          <div className='content-narrow'>
             <h2>Relax</h2>
             <p>
               We have lots of luggage space, enough for 3 - 4 large suitcases.
@@ -97,8 +99,8 @@ export default function Airport() {
             </div>
             </section>
 
-            <section>
-              <div className='content'>
+            <section className={styles.cardPayments}>
+              <div className='content-narrow'>
             <h2>Card payments</h2>
             <p>
               We accept card and contactless payments, including Apple and
@@ -108,8 +110,8 @@ export default function Airport() {
             </p>
             </div>
           </section>
-          <section>
-          <div className='content'>
+          <section className={styles.station}>
+          <div className='content-narrow'>
             <h2>Taxi to the station</h2>
             <p>
               If you need to catch a train to the Airport we have the best price{" "}

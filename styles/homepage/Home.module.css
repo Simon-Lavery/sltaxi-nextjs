@@ -5,6 +5,7 @@ ABOUT
 .about {
   padding: var(--section-padding) 0;
 }
+
 /*--------------------
 SAFETAXI
 ----------------------*/
@@ -63,6 +64,9 @@ CURRENT OFFERS
   margin: 5px 0 0 0;
 }
 
+.conditions {
+  margin: var(--element-margin-top) 0 0 0;
+}
 .currentOffers .conditions p {
   font-size: 0.9rem;
 }
@@ -135,8 +139,19 @@ AIRPORT TRANSFERS
   ----------------------*/
 
   .about {
-    padding-top: 0;
+    padding-top: 40px;
   }
+
+  .about .layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about h2 {
+    display: inline-block;
+  }
+
   .aboutText {
     display: inline-block;
     width: 50%;
@@ -205,6 +220,16 @@ AIRPORT TRANSFERS
 /*--------------------------
   SAFETAXI TRANSFERS
   ---------------------------*/
+
+.extras {
+  display: flex;
+  margin: var(--element-margin-top) 0 0;
+}
+
+.extras div {
+  width: 30%;
+  margin-right: 5%;
+}
 
 @media (min-width: 1150px) {
   /*------------------------

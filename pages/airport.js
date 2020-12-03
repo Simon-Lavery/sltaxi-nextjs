@@ -130,9 +130,10 @@ export default function Airport() {
               other station, call us for a quote.
             </p>
 
-            <HomeLink />
             </div>
           </section>
+          <HomeLink />
+
       </Layout>
     </div>
   );

@@ -171,8 +171,9 @@ export default function Station() {
                   </a>
                 </span>
               </p>
-              <HomeLink />
               </div>
+              <HomeLink />
+
       </Layout>
     </div>
   );

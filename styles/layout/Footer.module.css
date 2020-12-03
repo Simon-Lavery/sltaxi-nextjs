@@ -1,51 +1,85 @@
 .footer {
-  background-color: var(--accent-dark);
-  color: var(--primary-light);
-  padding: 40px 0 0;
+  background-color: var(--primary-light);
+  color: var(--dark-grey);
+  padding: 40px 0 5px;
+  font-size: 0.9rem;
 }
-
 .footer a {
-  color: var(--primary-light);
+  color: var(--accent-dark);
+}
+.footer h4 {
+  color: var(--accent-dark);
 }
 
 .catOnline {
   font-size: 1rem;
-  margin: var(--element-margin-top) 0 0;
+  margin: 40px 0 0;
 }
 
 .catOnline span {
   display: block;
 }
+
 .catOnline a {
   display: inline-block;
   width: 50%;
-  background: white;
   padding: 5px 10px;
   border-radius: 2px;
 }
+
 .contact {
-  padding: 20px 0;
+  margin: var(--element-margin-top) 0 0 0;
 }
 
-.tel,
+.social {
+  margin: var(--element-margin-top) 0 0 0;
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.social a span {
+  margin-left: 5px;
+}
+
 .email {
-  margin: 10px 0;
+  margin-top: 5px;
+}
+.copy {
+  margin: var(--element-margin-top) 0 0 0;
 }
 
-.copy {
-  font-size: 0.9rem;
+.copy span {
   display: block;
-  margin-top: var(--element-margin-top);
+  font-size: 0.9rem;
 }
 
 .privacy {
-  display: inline-block;
-  border-radius: 5px;
-  margin: 20px 0;
-  padding: 3px 5px;
-  background-color: var(--primary-light);
+  font-size: 0.9rem;
+  margin: var(--element-margin-top) 0 0 0;
 }
 
 .privacy a {
-  color: var(--primary-dark);
+  margin-left: 5px;
+}
+
+.privacy a {
+  color: var(--accent-dark);
+}
+
+@media (min-width: 768px) {
+  .catOnline {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .copy span {
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-right: 10px;
+  }
 }

@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.20.0",
+    "framer-motion": "^2.9.5",
     "next": "^10.0.3",
     "react": "16.13.1",
     "react-device-detect": "^1.13.1",

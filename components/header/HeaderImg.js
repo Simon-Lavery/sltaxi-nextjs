@@ -12,7 +12,7 @@ const HeaderImg = () => {
     '/blog': 'Picture of a computer keyboard'
   }
   return (
-    <Image src={imgURL} layout="fill" alt={altTags[router.pathname]}/>
+    <Image src={imgURL} layout="fill" priority={true} alt={altTags[router.pathname]}/>
   )
 }
 

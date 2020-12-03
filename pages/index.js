@@ -45,6 +45,7 @@ export default function Home() {
 
         <section className={styles.about}>
           <div className="content">
+            <div className={styles.layout}>
             <div className={styles.aboutText}>
                 <h2>
                   About us
@@ -56,7 +57,8 @@ export default function Home() {
                   Our taxis are maintained to the highest standards and we are fully licensed and DBS checked so whereever you need to go, you can rely on our experienced drivers to get you there in comfort and safety. Check out some of our excellent five star reviews to see what our customers say.
                 </p>
             </div>
-              <Perks />            
+              <Perks />
+              </div>            
           </div>
         </section>
 
@@ -177,15 +179,18 @@ export default function Home() {
               </p>
             
          </PictureRow>
-         <div className={styles.extras}>
-          <div className='content-narrow'>
-            <h3>Face masks</h3>
+         
+          <div className='content'>
+          <div className={styles.extras}>
+            <div>
+              <h3>Face masks</h3>
               <p>
                   Face masks are required to be worn in every taxi unless you
                   are exempt. If you require a face mask we can provide you with
                   a brand new disposable one, just ask your driver.
               </p>
-            
+            </div>
+            <div>
               <h3>Any other concerns</h3>
               <p>
                   We are doing everything possible to make your taxi journey
@@ -198,6 +203,7 @@ export default function Home() {
                 </a>
                   .
               </p>
+            </div>
             </div>
           </div>
         </section>

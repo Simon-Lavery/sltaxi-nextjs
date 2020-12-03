@@ -14,8 +14,8 @@ export default function Index() {
         canonical="https://sltaxicatterick.co.uk/blogs"
       >
         <Header
-          title1="Taxi guide &"
-          title2="Local info"
+          title1="Taxi guide"
+          title2="& Local info"
           intro="Get guides on how to save money on taxis or how taxis work in the area, also we have reccomended days out if you are stuck for something to do."
         />
         <section className={styles.blogs}>

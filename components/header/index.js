@@ -4,6 +4,8 @@ import Navbar from './navbar/Navbar';
 import { useState } from 'react';
 import { isMobile } from 'react-device-detect';
 import HeaderImg from './HeaderImg';
+import {motion, AnimatePresence} from 'framer-motion';
+import PopUp from '../../components/PopUp'
 
 const Header = (
   {
@@ -24,17 +26,27 @@ const Header = (
     }
   }
   return (
+    <AnimatePresence>
+    <motion.div 
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      exit={{opacity: 0}}
+      transition={{duration: .5}}>
     <header className={styles.header}>
       {/* header info */}
         <div className={styles.headerInfo}>
         <Navbar/>
+        <PopUp>
         <h1>
           <span>{title1}</span>
           <span>{title2}</span>
         </h1>
+        </PopUp>
+        <PopUp delay={.2}>
         <p>
         {intro}
         </p>
+        </PopUp>
         <div className={styles.headerButtons}>
           <a
           className={`${styles.headerButton} ${styles.emailButton}`} 
@@ -58,6 +70,8 @@ const Header = (
         <HeaderImg/>
       </div>
     </header>
+    </motion.div>
+    </AnimatePresence>
   )
 }
 

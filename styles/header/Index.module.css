@@ -131,7 +131,7 @@
   }
 
   .headerInfo h1 span {
-    display: inline-block;
+    display: block;
   }
 }
 

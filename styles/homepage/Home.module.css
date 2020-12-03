@@ -211,25 +211,24 @@ AIRPORT TRANSFERS
     order: -1;
     padding: 40px 40px 40px 0;
   }
+  /*--------------------------
+  SAFETAXI TRANSFERS
+  ---------------------------*/
+
+  .extras {
+    display: flex;
+    margin: var(--element-margin-top) 0 0;
+  }
+
+  .extras div {
+    width: 30%;
+    margin-right: 5%;
+  }
 }
 
 /*--------------------------
   AIRPORT TRANSFERS
   ---------------------------*/
-
-/*--------------------------
-  SAFETAXI TRANSFERS
-  ---------------------------*/
-
-.extras {
-  display: flex;
-  margin: var(--element-margin-top) 0 0;
-}
-
-.extras div {
-  width: 30%;
-  margin-right: 5%;
-}
 
 @media (min-width: 1150px) {
   /*------------------------

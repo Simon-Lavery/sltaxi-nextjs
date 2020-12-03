@@ -4,7 +4,9 @@ import Layout from "../components/layout/Layout";
 import Perks from "../components/homepage/Perks";
 import Header from "../components/header";
 import PictureRow from "../components/PictureRow";
-import Image from 'next/image'
+import Image from 'next/image';
+import PopUp from "../components/PopUp";
+
 const schema = {
   "@context": "https://schema.org/",
   "@type": "TaxiService",
@@ -44,6 +46,7 @@ export default function Home() {
        
 
         <section className={styles.about}>
+        
           <div className="content">
             <div className={styles.layout}>
             <div className={styles.aboutText}>
@@ -60,6 +63,7 @@ export default function Home() {
               <Perks />
               </div>            
           </div>
+      
         </section>
 
        

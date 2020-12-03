@@ -7,6 +7,22 @@
 .footer a {
   color: var(--primary-light);
 }
+
+.catOnline {
+  font-size: 1rem;
+  margin: var(--element-margin-top) 0 0;
+}
+
+.catOnline span {
+  display: block;
+}
+.catOnline a {
+  display: inline-block;
+  width: 50%;
+  background: white;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
 .contact {
   padding: 20px 0;
 }
@@ -18,8 +34,8 @@
 
 .copy {
   font-size: 0.9rem;
-  margin-top: 5px;
   display: block;
+  margin-top: var(--element-margin-top);
 }
 
 .privacy {

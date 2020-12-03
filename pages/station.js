@@ -3,6 +3,7 @@ import HomeLink from "../components/HomeLink";
 import Link from "next/link";
 import Header from '../components/header';
 import styles from '../styles/station.module.css';
+import PictureRow from '../components/PictureRow';
 
 const schema = {
   "@context": "http://schema.org",
@@ -35,9 +36,7 @@ export default function Station() {
        <Header 
          title1="Best Price"
          title2="Station transfers"
-         intro="We have the best taxi prices in Catterick garrison. Our taxis are maintained to the highest
-                standards, we are confident you won't find the same level of
-                service anywhere else."
+         intro="We have the best Station transfer prices in Catterick garrison. Our taxis are maintained to the highest standards, we are confident you won't find the same level of service anywhere else."
        />
         
           <section className={styles.intro}>
@@ -60,26 +59,35 @@ export default function Station() {
             </div>
           </section>
           <section className={styles.specialOffers}>
-          <div className='content-narrow'>
-              <h2>Special offers</h2>
-              <p>
-                We can provide a taxi from Catterick garrison to Darlington or
-                Northallerton station for the special offer price of £25 which
-                is a saving of around £10 on the standard price. As the taxi
-                price to either station is the same it might be worth comparing
-                your train ticket prices from both stations, the price could be
-                cheaper or the train may be more direct.
-              </p>
-              <p>
-                If you would like a quote to any other station just give us a
-                call, we are confident we can beat any local price. We also have
-                some great{" "}
-                <Link href="/airport">
-                  <a className="inline-link">fixed airport taxi prices</a>
-                </Link>
-                .
-              </p>
+        
+            <PictureRow 
+              imgURL="£25-darlington.jpg"
+              height={314}
+              width={600}
+              reverse={true}
+            >
+              <div>
+                <h2>Special offers</h2>
+                <p>
+                  We can provide a taxi from Catterick garrison to Darlington or
+                  Northallerton station for the special offer price of £25 which
+                  is a saving of around £10 on the standard price. As the taxi
+                  price to either station is the same it might be worth comparing
+                  your train ticket prices from both stations, the price could be
+                  cheaper or the train may be more direct.
+                </p>
+                <p>
+                  If you would like a quote to any other station just give us a
+                  call, we are confident we can beat any local price. We also have
+                  some great{" "}
+                  <Link href="/airport">
+                    <a className="inline-link">fixed airport taxi prices</a>
+                  </Link>
+                  .
+                </p>
               </div>
+              </PictureRow>
+
               </section>
 
               <section className={styles.stationPickups}>
@@ -89,12 +97,11 @@ export default function Station() {
                 If you are coming in to Darlington or Northallerton station and
                 want to avoid the hassle of not being able to find a taxi, we
                 would advise booking your taxi in advance and we can be waiting
-                at the station when you arrive, a minimum of 25 minutes before
-                your arrival time would be required but you can book as far in
-                advance as you like.
+                at the station when you arrive.
               </p>
               <p>
-                To book your taxi just give us a call on{" "}
+                A minimum of 25 minutes before
+                your arrival time would be required as we would be sending a taxi from Catterick but you can book as far in advance as you like. To book your taxi just give us a call on{" "}
                 <a href="tel:01748883370">01748 883370</a> or if you prefer you
                 can{" "}
                 <a href="mailto:sltaxicatterick@gmail.com">send us an email</a>.
@@ -113,19 +120,37 @@ export default function Station() {
               </div>
               </section>
               <section className={styles.airportTransfers}>
-              <div className='content-narrow'>
-              <h2>Airport transfers</h2>
-              <p>
-                We also have unbeatable{" "}
-                <Link href="/airport">
-                  <a className="inline-link">Airport tranfer</a>
-                </Link>{" "}
-                prices, if you are travelling from Catterick to Newcastle (NCL),
-                Leeds Bradford (LBA) or Manchester (MCN) Airport why not ask us
-                for a no obligation quote.
-              </p>
-              <h3>Is a taxi cheaper ?</h3>
-              <p>
+                <div className='content'>
+                  <PictureRow
+                    imgURL='airport2.jpg'
+                    height={400}
+                    width={750}
+                    altText='picture of a plane landing at an airport'
+                    reverse={false}>
+                <div>
+
+                <h2>Airport transfers</h2>
+                  <p>
+                    We also have the best fixed price{" "}
+                    <Link href="/airport">
+                      <a className="inline-link">Airport tranfer</a>
+                    </Link>{" "}
+                    prices, if you are travelling from Catterick to Newcastle (NCL),
+                    Leeds Bradford (LBA) or Manchester (MCN) Airport why not ask us
+                    for a no obligation quote.
+                  </p>
+                  <p>
+                    You can rely on our experienced drivers to get you to you destination in comfort and safety. And if you need a taxi to collect you from the airport, we can do that to.
+                  </p>
+                </div>
+              </PictureRow>
+              
+              </div>
+              </section>
+              <section className={styles.taxiCheaper}>
+                <div className="content-narrow">
+                <h3>Is a taxi cheaper ?</h3>
+                <p>
                 If you are travelling with a few people you should always check
                 the price of your train tickets combined with the price of your
                 taxi to the station, we have very competitive long distance
@@ -133,6 +158,10 @@ export default function Station() {
                 cheaper for you all to share a taxi straight to your
                 destination.
               </p>
+              
+              </div>
+              </section>
+              <div class="content">
               <p>
                 <span>
                   Check train times here
@@ -144,9 +173,6 @@ export default function Station() {
               </p>
               <HomeLink />
               </div>
-              </section>
-           
-      
       </Layout>
     </div>
   );

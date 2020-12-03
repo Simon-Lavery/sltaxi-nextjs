@@ -4,3 +4,20 @@
 .station {
   padding: var(--section-padding) 0;
 }
+
+.doubleText .second {
+  margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+  .doubleText .second {
+    margin-top: 0;
+  }
+  .doubleText {
+    display: flex;
+    justify-content: space-between;
+  }
+  .doubleText div {
+    width: 45%;
+  }
+}

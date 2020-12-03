@@ -4,7 +4,7 @@ import { IconContext } from "react-icons";
 const SocialMediaLinks = () => {
   return (
     <div className={styles.socialMediaLinks}>
-      <div className="content">
+    
         <IconContext.Provider value={{ className: styles.icon }}>
           <a href="https://www.facebook.com/SLTaxiCatterick">
             <span className='sr-only'>Link to SlTaxi Catterick on facebook</span>
@@ -19,7 +19,7 @@ const SocialMediaLinks = () => {
             <FaGoogle />
           </a>
         </IconContext.Provider>
-      </div>
+      
     </div>
   );
 };

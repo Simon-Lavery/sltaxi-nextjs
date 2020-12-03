@@ -36,7 +36,7 @@ export default function Home() {
       <Header
         title1='Cattericks Best'
         title2='Taxi Service'
-        intro='We are a Professional, Independent taxi service in Catterick
+        intro='Professional, Independent taxi service in Catterick
                   garrison, serving the Catterick, Scotton, Colburn area. We
                   pride ourselves on exceptional service and going the extra
                   mile for our customers.'
@@ -50,13 +50,10 @@ export default function Home() {
                   About us
                 </h2>
                 <p>
-                  If you need a taxi for a night out, business trip, airport
-                  transfer or shopping trip we won't be beaten on price or
-                  service so give us a call and see for yourself.
+                  We are an independent taxi service serving Catterick and the surrounding areas. If you are looking a Reliable, Professional taxi service you are in the right place. With SLTaxi you book directly with your taxi driver, cutting out the middle man and saving you money.
                 </p>
                 <p>
-                  Our taxis are maintained to the
-                  highest standards and we are fully licensed and DBS checked. With SLTaxi you book directly with your taxi driver, cutting out the middle man and saving you money.
+                  Our taxis are maintained to the highest standards and we are fully licensed and DBS checked so whereever you need to go, you can rely on our experienced drivers to get you there in comfort and safety. Check out some of our excellent five star reviews to see what our customers say.
                 </p>
             </div>
               <Perks />            
@@ -67,10 +64,10 @@ export default function Home() {
         <section className={styles.currentOffers}>
           <div className='content-narrow'>
             <h2>Current offers</h2>
-                  
+              <p>As a rule we alway charge our taxi customers the best price we can rather than the maximum price possible, we also have a few set offer prices listed below. We have some great fixed price Airport prices, Call or email for a quote.</p>
               <div className={styles.offer1}>
                 <div className={styles.img}>
-                <Image src="/imgs/£25-darlington.jpg" layout='fill' alt="Special offer £25 taxi from Catterick to Darlington or Northallerton"/>
+                <Image src="/imgs/£25-darlington.jpg" layout='fill' alt="Special offer £25 taxi Catterick to Darlington or Northallerton"/>
                 </div>
                 <div className={styles.offerDetails}>
                   <h3>Offer 1</h3>
@@ -112,13 +109,13 @@ export default function Home() {
                 </Link>{" "}
                 so whether you are travelling for business or going on holiday
                 you can count on our first class service to get you there in
-                comfort and on time.
+                for the best price, in comfort and on time.
               </p>
               <p>
                 {" "}
                 We can take you from Catterick to any UK airport, from Newcastle
                 Airport (NCL) to London Heathrow (LHR) we have some excellent
-                long distance prices. We also have wifi in our taxi to keep you
+                long distance taxi prices. We also have free customer wifi in our taxi to keep you
                 entertained on your journey. Call us today for a no obligation
                 quote.
               </p>
@@ -173,15 +170,11 @@ export default function Home() {
                 The safety of passengers and driver are our number 1 priority
                 and we have taken extra measures to keep everyone safe. We are
                 currently only taking a maximum of 3 passengers per journey.
-                Other safety measures we have introduced include:
               </p>
-              <ul>
-                <li>Screen fitted between driver and passengers</li>
-                <li>Hand gel for customers</li>
-                <li>Contactless payment available in every taxi</li>
-                <li>Touch points cleaned every journey</li>
-                <li>Car deep cleaned after every shift</li>
-              </ul>
+
+              <p>
+                We have fitted the best available safety screen that seperates the front and back of the taxi and we are sanitizing all surfaces between every customer. We also have hand gel available for customers and we encourage use of contactless payments where possible.
+              </p>
             
          </PictureRow>
          <div className={styles.extras}>

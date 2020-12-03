@@ -44,7 +44,9 @@ export default function Airport() {
 
         
         <section className={styles.intro}>
-          <div className="content-narrow">
+          <div className="content">
+          <div className={styles.doubleText}>
+            <div>
             <h2>Get the best price from us</h2>
             <p>
               Are you going on holiday or travelling for business?, need a taxi
@@ -54,6 +56,9 @@ export default function Airport() {
               So where ever you need to go, you can trust to get you there
               safely, in comfort and on time.
             </p>
+            </div>
+            <div className={styles.second}>
+            <h2>Fixed price fares</h2>
             <p>
               We have unbeatable fixed price fares from Catterick to Newcastle
               Airport (NCL), Leeds Bradford Airport (LBA) or Manchester Airport
@@ -62,6 +67,8 @@ export default function Airport() {
               see if we can beat it. We would recommend booking your airport
               transfer in advance if possible to guarantee availability.
             </p>
+            </div>
+            </div>
             </div>
         </section>
         <section className={styles.relax}>

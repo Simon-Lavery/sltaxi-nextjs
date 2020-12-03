@@ -24,7 +24,6 @@ const Nav = ({ show }) => {
   ];
   
   const menu = show ? styles.show : "";
-  console.log(router.pathname)
   return (
     <nav className={`${styles.nav} ${menu}`} aria-label='Main'>
       <ul>

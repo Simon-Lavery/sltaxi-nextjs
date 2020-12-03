@@ -16,13 +16,16 @@ SAFETAXI
 
 .safeTaxi h2,
 .safeTaxi h3 {
-  color: white;
+  color: var(--taxi-yellow);
 }
 
 .safeTaxi a {
   color: var(--accent-light);
 }
 
+.extras h3:nth-last-of-type(1) {
+  margin-top: var(--element-margin-top);
+}
 /* -----------------------
 CURRENT OFFERS
 -------------------------*/
@@ -36,7 +39,7 @@ CURRENT OFFERS
 .currentOffers .img {
   position: relative;
   height: 160px;
-  margin: 0;
+  margin: var(--element-margin-top) 0 0;
   max-width: 100%;
   width: 100%;
 }
@@ -219,9 +222,9 @@ AIRPORT TRANSFERS
     margin: 0 10% 0 0;
   }
 
-  .offer1 .img,
-  .offer2 .img {
+  .currentOffers .img {
     width: 100%;
+    height: 250px;
   }
 
   .offerDetails {

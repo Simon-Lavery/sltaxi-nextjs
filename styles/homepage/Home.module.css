@@ -11,7 +11,18 @@ SAFETAXI
 ----------------------*/
 
 .safeTaxi {
-  background-color: var(--accent-dark);
+  background: #4b6cb7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #182848,
+    #4b6cb7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #182848,
+    #4b6cb7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   color: white;
 }
 
@@ -32,7 +43,18 @@ CURRENT OFFERS
 -------------------------*/
 
 .currentOffers {
-  background: var(--primary-light);
+  background: #8e9eab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #eef2f3,
+    #8e9eab
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #eef2f3,
+    #8e9eab
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   color: #444;
   padding: var(--section-padding) 0;
 }
@@ -40,7 +62,7 @@ CURRENT OFFERS
 .currentOffers .img {
   position: relative;
   height: 160px;
-  margin: var(--element-margin-top) 0 0;
+  margin: 0;
   max-width: 100%;
   width: 100%;
 }
@@ -73,8 +95,10 @@ CURRENT OFFERS
 
 .offer1,
 .offer2 {
-  background-color: #ddd;
-  margin: 10px 0 0 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  margin: 20px 0 0 0;
   font-size: 0.9rem;
 }
 
@@ -239,7 +263,6 @@ AIRPORT TRANSFERS
     display: inline-block;
     width: 45%;
     flex-direction: column;
-    background-color: #eee;
   }
 
   .offer1 {

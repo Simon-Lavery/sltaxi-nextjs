@@ -38,7 +38,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-
+        
         <div className={styles.catOnline}>
           <span>site by</span>
           <a href="https://catterickonline.co.uk">
@@ -52,15 +52,16 @@ const Footer = () => {
             <a>Privacy policy</a>
           </Link>
         </div>
-
         <div className={styles.copy}>
           <span>
             SLTaxi is a trading name of Simon Lavery
           </span>
           <span>&copy; 2020 All rights reserved.</span>
         </div>
+        
+       
+        
       </div>
-      
     </footer>
   );
 };

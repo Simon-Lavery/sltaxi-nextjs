@@ -5,7 +5,6 @@ import Perks from "../components/homepage/Perks";
 import Header from "../components/header";
 import PictureRow from "../components/PictureRow";
 import Image from 'next/image';
-import PopUp from "../components/PopUp";
 
 const schema = {
   "@context": "https://schema.org/",

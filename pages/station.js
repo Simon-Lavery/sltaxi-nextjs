@@ -19,7 +19,7 @@ const schema = {
   },
   offers: {
     "@type": "Offer",
-    price: "£25",
+    price: "£35",
   },
 };
 
@@ -58,37 +58,7 @@ export default function Station() {
             </p>
             </div>
           </section>
-          <section className={styles.specialOffers}>
-        
-            <PictureRow 
-              imgURL="£25-darlington.jpg"
-              height={314}
-              width={600}
-              reverse={true}
-            >
-              <div>
-                <h2>Special offers</h2>
-                <p>
-                  We can provide a taxi from Catterick garrison to Darlington or
-                  Northallerton station for the special offer price of £25 which
-                  is a saving of around £10 on the standard price. As the taxi
-                  price to either station is the same it might be worth comparing
-                  your train ticket prices from both stations, the price could be
-                  cheaper or the train may be more direct.
-                </p>
-                <p>
-                  If you would like a quote to any other station just give us a
-                  call, we are confident we can beat any local price. We also have
-                  some great{" "}
-                  <Link href="/airport">
-                    <a className="inline-link">fixed airport taxi prices</a>
-                  </Link>
-                  .
-                </p>
-              </div>
-              </PictureRow>
-
-              </section>
+          
 
               <section className={styles.stationPickups}>
               <div className='content-narrow'>

@@ -121,12 +121,12 @@ export default function Airport() {
           <div className='content-narrow'>
             <h2>Taxi to the station</h2>
             <p>
-              If you need to catch a train to the Airport we have the best price{" "}
+              If you need to catch a train to the Airport we have the best prices{" "}
               <Link href="/station">
-                <a className="inline-link">station transfers</a>
+                <a className="inline-link"> for station transfers</a>
               </Link>{" "}
               in the Catterick garrison area. Get a taxi to Darlington or
-              Northallerton station for just £25, or if you need a taxi to any
+              Northallerton station, or if you need a taxi to any
               other station, call us for a quote.
             </p>
 

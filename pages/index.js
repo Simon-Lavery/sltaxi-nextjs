@@ -29,7 +29,7 @@ export default function Home() {
     <div>
       <Layout
         title="Taxi service - Catterick Garrison | SLTaxi - 01748 883370"
-        description="Superb taxi service in Catterick garrison, Unbeatable prices, Unrivalled service, serving Catterick, Colburn, Scotton and surrounding areas, Catterick to Darlington £25"
+        description="Superb taxi service in Catterick garrison, Unbeatable prices, Unrivalled service, serving Catterick, Colburn, Scotton and surrounding areas, Catterick to Darlington"
         keywords="taxi catterick, taxi catterick garrison, taxis, taxi colburn"
         canonical="https://sltaxicatterick.co.uk"
         schema={schema}
@@ -66,35 +66,7 @@ export default function Home() {
         </section>
 
        
-        <section className={styles.currentOffers}>
-          <div className='content-narrow'>
-            <h2>Current offers</h2>
-              <p>As a rule we alway charge our taxi customers the best price we can rather than the maximum price possible, we also have a few set offer prices listed below. We have some great fixed price Airport prices, Call or email for a quote.</p>
-              <div className={styles.offer1}>
-                <div className={styles.img}>
-                <Image src="/imgs/£25-darlington.jpg" layout='fill' alt="Special offer £25 taxi Catterick to Darlington or Northallerton"/>
-                </div>
-                <div className={styles.offerDetails}>
-                  <h3>Offer 1</h3>
-                  <p>Get a taxi from Catterick to Darlington or Northallerton for a maximum price of £25. Thats a saving of around £10 on the normal price.</p>
-                </div>
-              </div>
-              
-              <div className={styles.offer2}>
-                <div className={styles.img}>
-                <Image src="/imgs/dl9-offer.jpg" layout='fill' alt="Special offer taxi journey within DL9 postcode £5 max fare"/>
-                </div>
-                <div className={styles.offerDetails}>
-                  <h3>Offer 2</h3>
-                  <p>£5 maximum fare for any journey within the DL9 postcode, that is a saving of up to 50%. Journey must be A to B on pick up and one drop off.</p>
-                </div>
-              </div>
-              <div className={styles.conditions}>
-                <h4>Conditions</h4>
-                <p>All offers are on phone bookings only and are applied automatically when booked.</p>
-              </div>
-          </div>
-        </section>
+        
 
       <section className={styles.airportTransfers}>
         <div>
@@ -142,11 +114,7 @@ export default function Home() {
                 <Link href="/station">
                   <a className="inline-link"> station transfers </a>
                 </Link>
-                from Catterick garrison, We currently have a special offer, taxi
-                for 1-4 passengers from Catterick garrison to Darlington station
-                or Northallerton station for the special offer price of £25.
-                This offer is also valid if you need a taxi from Darlington or
-                Northallerton to Catterick.
+                from Catterick garrison, We provide taxis from Catterick to Darlington and Northallerton station and have some great prices, call for your quote today.
               </p>
               <p>
                 We would advise booking in advance to guarantee availablity.{" "}
